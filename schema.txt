@@ -1,0 +1,650 @@
+Database: pt_master
+Columns:
+- mrn (String): Medical record number (MRN)
+- pt_name_last (String): Patient last name
+- pt_name_first (String): Patient first name
+- pt_name_middle (String (nullable)): Patient middle name
+- pt_dob (Date): Date of birth
+- pt_sex (String or Categorical): Patient sex
+- pt_last_alive_date (Date (nullable)): Patient last alive date
+- pt_followed_at (Date): Patient followed at
+- pt_death_date (Date (nullable)): Patient death date
+- pt_death (Boolean): Patient died
+- pt_death_cod (String (nullable)): Patient cause of death
+- pt_death_cod_notes (String (nullable)): Patient cause of death description
+- pt_death_notes (String (nullable)): Patient death description
+- pt_tx_received (Boolean): Patient received a heart transplant
+- pt_tx_received_date (Date (nullable)): Heart transplant date
+- pt_notes (String (nullable)): Patient notes
+
+
+Database: pt_hx
+Columns:
+- mrn (string): Medical record number (MRN)
+- dx_cardiac (string): Cardiac Diagnosis
+- dx_cardiac_notes (string): Cardiac diagnosis description
+- dx_date_recorded (date): Date of last documentation available for this assessment
+- dx_genetic___cornelia_de_lange_syndrome (boolean): Genetic diagnosis: Cornelia de Lange syndrome
+- dx_genetic___digeorge (boolean): Genetic diagnosis: Digeorge
+- dx_genetic___ellis_van_creveld_syndrome (boolean): Genetic diagnosis: Ellis-van Creveld syndrome
+- dx_genetic___goldenhar_syndrome (boolean): Genetic diagnosis: Goldenhar syndrome
+- dx_genetic___holt_oram_syndrome (boolean): Genetic diagnosis: Holt-Oram syndrome
+- dx_genetic___jacobsen_syndrome (boolean): Genetic diagnosis: Jacobsen syndrome
+- dx_genetic___kabuki_syndrome (boolean): Genetic diagnosis: Kabuki syndrome
+- dx_genetic___kartagener_syndrome (boolean): Genetic diagnosis: Kartagener syndrome
+- dx_genetic___none (boolean): Genetic diagnosis: none
+- dx_genetic___noonan_syndrome (boolean): Genetic diagnosis: Noonan syndrome
+- dx_genetic___other (boolean): Genetic diagnosis: other
+- dx_genetic___rubinstein_taybi_syndrome (boolean): Genetic diagnosis: Rubinstein-Taybi syndrome
+- dx_genetic___smith_lemli_opitz_syndrome (boolean): Genetic diagnosis: Smith-Lemli-Opitz syndrome
+- dx_genetic___suspected_genetic_diagnosis_or_syndrome (boolean): Genetic diagnosis: Suspected genetic diagnosis or syndrome
+- dx_genetic___trisomy_21 (boolean): Genetic diagnosis: Trisomy 21
+- dx_genetic___turner_syndrome (boolean): Genetic diagnosis: Turner syndrome
+- dx_genetic___vacterl_syndrome_vacter_vater_vaterr_vacterl_h_syndrome (boolean): Genetic diagnosis: VACTERL syndrome (vacter/vater/vaterr/vacterl-h syndrome)
+- dx_genetic___wollf_hirschhorn_syndrome (boolean): Genetic diagnosis: Wollf Hirschhorn syndrome
+- dx_genetic_notes (string): Genetic diagnosis description
+- dx_htx (boolean): Suspected heterotaxy
+- dx_ivc (boolean): Interrupted inferior vena cava (IVC)
+- dx_vent_morph (string): Functional Ventricle Type OR Dominant Ventricular morphology
+- proc_apc (boolean): Aortopulmonary collateral (APC) intervention
+- proc_apc_date (date): Aortopulmonary collateral (APC) intervention date
+- proc_arch (boolean): Non-neonatal arch procedure
+- proc_arch_date (date): Ascending aorta or arch intervention date
+- proc_arch_type (string): Ascending aorta or arch intervention tpe
+- proc_arch_type_notes (string): Ascending aorta or arch intervention description
+- proc_avv (boolean): Atrioventricular valve procedure
+- proc_avv_date (date): Atrioventricular valve procedure date
+- proc_avv_type (string): Atrioventricular valve procedure type
+- proc_avv_type_notes (string): Atrioventricular valve procedure description
+- proc_branchpa (boolean): Branch pulmonary artery intervention
+- proc_branchpa_date (date): Branch pulmonary artery intervention date
+- proc_branchpa_type (string): Branch pulmonary artery intervention type
+- proc_branchpa_type_notes (string): Branch pulmonary artery intervention description
+- proc_fontan_path (boolean): Fontan pathway intervention
+- proc_fontan_path_date (date): Fontan pathway intervention date
+- proc_fontan_path_type (string): Fontan pathway intervention type
+- proc_fontan_path_notes (string): Fontan pathway intervention description
+- proc_pab (boolean): Pulmonary artery band 
+- proc_pab_date (date): Pulmonary artery band date
+- proc_pulm_vein_type (string): Pulmonary vein intervention type
+- proc_pulm_vein_type_notes (string): Pulmonary vein intervention description
+- proc_pulm_vein (Boolean): Pulmonary vein intervention
+- proc_pulm_vein_date (Date): Pulmonary vein intervention date
+- proc_shunt (Boolean): Prior systemic to pulmonary artery shunt
+- proc_shunt_date (Date): Prior systemic to pulmonary artery shunt date
+- proc_shunt_type (String): Prior systemic to pulmonary artery shunt type
+- proc_shunt_type_notes (String): Prior systemic to pulmonary artery shunt description
+- proc_slv (Boolean): Semi-lunar valve procedure
+- proc_slv_date (Date): Semi-lunar valve procedure date
+- proc_slv_type (String): Semi-lunar valve procedure type
+- proc_slv_type_notes (String): Semi-lunar valve procedure description
+- proc_stansel (Boolean): Stansel/Damus/DKS procedure
+- proc_stansel_date (Date): Stansel/Damus/DKS procedure date
+- proc_svc (Boolean): Superior vena cava (SVC) intervention
+- proc_svc_date (Date): Superior vena cava (SVC) intervention date
+- proc_svc_type (String): Superior vena cava (SVC) intervention type
+- proc_svc_type_notes (String): Superior vena cava (SVC) intervention description
+- proc_vvc (Boolean): Veno-venous collaterals (VVC) intervention
+- proc_vvc_date (Date): Veno-venous collaterals (VVC) intervention date
+- surg_cardiac_total (Integer): Total cardiac surgeries
+- surg_fontan_date (Date): Stage 3/ Fontan Date
+- surg_fontan_fen (Boolean): Fenestration at initial fontan (check box under Fontan Surgery)
+- surg_fontan_rev (Boolean): Fontan Revision
+- surg_fontan_rev_date (Date): Fontan Revision date
+- surg_fontan_rev_fen (Boolean): Fenestration at fontan revision (check box under Fontan Revision)
+- surg_fontan_rev_notes (String): Fontan Revision descriptions
+- surg_fontan_rev_type (String): Fontan Revision type
+- surg_fontan_type (String): Fontan Type
+- surg_fontan_type_notes (String): Fontan description
+- surg_neo (Boolean): Stage 1/ Neonatal (<30 days old) Surgery
+- surg_neo_date (Date): Stage 1/ Neonatal (<30 days old) Surgery Date
+- surg_neo_shunt (Boolean): Type of pulmonary blood flow shunt: Prior systemic to PA shunt?
+- surg_neo_shunt_notes (String): Type of pulmonary blood flow shunt: Prior systemic to PA shunt? Description
+- surg_neo_type (String): Stage 1/ Neonatal Surgery type 
+- surg_neo_type_notes (String): Stage 1/ Neonatal Surgery description 
+- surg_prefontan_oth_date (Date): Pre Fontan Surgery Date
+- surg_prefontan_oth_notes (String): Pre Fontan Surgery description
+- surg_prefontan_other (Boolean): Pre Fontan Surgery 
+- surg_proc_hx_notes (String): Other relevant surgical or clinical history description
+- surg_stage2 (Boolean): Stage 2/ BDG
+- surg_stage2_date (Date): Stage 2/ BDG Date
+- surg_stage2_type (String): Stage 2/ BDG type
+- surg_stage2_type_notes (String): Stage 2/ BDG description
+- surg_count_pump_on (Integer): Surgery on cardiopulmonary bypass (+CPB)
+- surg_count_pump_off (Integer): Surgery off cardiopulmonary bypass (no CPB)
+- surg_count_post_fontan (Integer): Surgery count post Fontan
+- cath_count_at_bch (Integer): Number of caths (at BCH)
+- cath_count_post_fontan (Integer): Interventional caths post Fontan
+- dx_cardiac_anatomy_notes (String): Cardiac diagnosis and anatomy notes
+- surg_biv_convert_date (Date): BiVentricular Surgery Date
+- surg_biv_notes (String): BiVentricular Surgery Description
+
+
+Database: status
+Columns:
+- mrn (String): Medical record number (MRN)
+- status_assess_date (Date (YYYY-MM-DD)): Date of assessment
+- hx_nyha (String (categorical)): NYHA class
+- hx_nyha_date (Date (YYYY-MM-DD)): NYHA class date
+- hx_arrest_nonperi_date (Date (YYYY-MM-DD)): Cardiac arrest (non-peri procedure) date
+- hx_arrest_nonperi_notes (String (free-text notes)): Cardiac arrest (non-peri procedure) notes
+- hx_arrest_peri_date (Date (YYYY-MM-DD)): Cardiac arrest (peri procedure) date
+- hx_arrest_peri_notes (String (free-text notes)): Cardiac arrest (peri procedure) notes
+- hx_ascites (Boolean (True/False)): Ascites
+- hx_ascites_date (Date (YYYY-MM-DD)): Ascites date
+- hx_cardiacarrest_nonperiop (Boolean (True/False)): Cardiac arrest (non-peri procedure)
+- hx_cardiacarrest_periop (Boolean (True/False)): Cardiac arrest (peri procedure)
+- hx_ecmo (Boolean (True/False)): ECMO
+- hx_ecmo_cannulations (Integer (count)): Total Number of ECMO cannulations
+- hx_ecmo_date (Date (YYYY-MM-DD)): ECMO date
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): A Fib
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): A Flutter
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): Atrial SVT
+- hx_ep_atrial_arrhythmia_date (Date (YYYY-MM-DD)): Atrial Arrhythmia: AFib/Flutter/SVT date
+- hx_ep_cardiover_elect_date (Date (YYYY-MM-DD)): Cardioversion (elective) date
+- hx_ep_cardiover_emerg_date (Date (YYYY-MM-DD)): Cardioversion (emergent) date
+- hx_ep_cardiover_emerg_notes (String (free-text notes)): Cardioversion (emergent) details
+- hx_ep_cardioversion_elect (Boolean (True/False)): Cardioversion (elective)
+- hx_ep_cardioversion_nonele (Boolean (True/False)): Cardioversion (emergent)
+- hx_ep_defib (Boolean (True/False)): Defibrilator
+- hx_ep_defib_date (Date (YYYY-MM-DD)): Defibrilator date
+- hx_ep_defib_rsn___atrial_arrhythmia (Boolean (True/False)): Reason for Defibrilator (checkbox): Atrial Arrhythmia
+- hx_ep_defib_rsn___history_of_cardiac_arrest (Boolean (True/False)): Reason for Defibrilator (checkbox): History of Cardiac Arrest
+- hx_ep_defib_rsn___history_of_syncope (Boolean (True/False)): Reason for Defibrilator (checkbox): History of Syncope
+- hx_ep_defib_rsn___other (Boolean (True/False)): Reason for Defibrilator (checkbox): Other
+- hx_ep_defib_rsn___ventricular_arrhythmia (Boolean (True/False)): Reason for Defibrilator (checkbox): Ventricular Arrhythmia
+- hx_ep_defib_rsn_notes (String (free-text notes)): Reason for Defibrilator (notes)
+- hx_ep_nsvt (Boolean (True/False)): Nonsustained ventricular tachycardia (NSVT) 
+- hx_ep_nsvt_date (Date (YYYY-MM-DD)): Nonsustained ventricular tachycardia (NSVT) date
+- hx_ep_pacemaker (Boolean (True/False)): Pacemaker
+- hx_ep_pacemaker_date (Date (YYYY-MM-DD)): Pacemaker date
+- hx_ep_pacemaker_rsn___arrhythmia (Boolean (True/False)): Reason for Pacemaker (checkbox): Arrhythmia
+- hx_ep_pacemaker_rsn___heart_block (Boolean (True/False)): Reason for Pacemaker (checkbox): Heart block
+- hx_ep_pacemaker_rsn___other (Boolean (True/False)): Reason for Pacemaker (checkbox): other
+- hx_ep_pacemaker_rsn___sinus_node_dysfunction (Boolean (True/False)): Reason for Pacemaker (checkbox): Sinus node dysfunction
+- hx_ep_pacemaker_rsn_notes (String (free-text notes)): Reason for Pacemaker (notes)
+- hx_ep_sinus_dysfxn (Boolean (True/False)): Sinus node dysfunction
+- hx_ep_sinus_dysfxn_date (Date (YYYY-MM-DD)): Sinus node dysfunction date
+- hx_ep_study (Boolean (True/False)): EP Study
+- hx_ep_study_date (Date (YYYY-MM-DD)): EP Study date
+- hx_ep_study_findings___atrial_flutter_ablation (Boolean (True/False)): EP Study findings (checkbox): Atrial Flutter Ablation
+- hx_ep_study_findings___atrial_tachyarrhythmia_ablation (Boolean (True/False)): EP Study findings (checkbox) Atrial Tachyarrhythmia Ablation
+- hx_ep_study_findings___inducible_atrial_tachyarrhythmia (Boolean (True/False)): EP Study findings (checkbox): Inducible Atrial Tachyarrhythmia
+- hx_ep_study_findings___inducible_ventricular_tachyarrhythmia (Boolean (True/False)): EP Study findings (checkbox): Inducible Ventricular Tachyarrhythmia
+- hx_ep_study_findings___other (Boolean (True/False)): EP Study findings (checkbox): Other
+- hx_ep_study_findings___ventricular_tachyarrhythmia_ablation (Boolean (True/False)): EP Study findings (checkbox): Ventricular Tachyarrhythmia Ablation
+- hx_ep_study_findings_notes (String (free-text notes)): EP Study findings (notes)
+- hx_ep_vt (Boolean (True/False)): Sustained ventricular tachycardia (SVT) 
+- hx_ep_vt_date (Date (YYYY-MM-DD)): Sustained ventricular tachycardia (SVT) date
+- hx_hcc (Boolean (True/False)): HCC
+- hx_hcc_date (Date (YYYY-MM-DD)): HCC date
+- hx_hemoptysis (Boolean (True/False)): Hemoptysis
+- hx_hemoptysis_date (Date (YYYY-MM-DD)): Hemoptysis date
+- hx_liver (Boolean (True/False)): Liver Disease
+- hx_liver_date (Date (YYYY-MM-DD)): Liver Disease date
+- hx_pe_chylous (Boolean (True/False)): Pleural Effusion (chylous)
+- hx_pe_chylous_date (Date (YYYY-MM-DD)): Pleural Effusion (chylous) date
+- hx_pe_nonchylous (Boolean (True/False)): Pleural Effusion
+- hx_pe_nonchylous_date (Date (YYYY-MM-DD)): Pleural Effusion date
+- hx_plast_bronch (Boolean (True/False)): Plastic Bronchitis
+- hx_plast_bronch_date (Date (YYYY-MM-DD)): Plastic Bronchitis date
+- hx_ple (Boolean (True/False)): Protein-losing enteropathy (PLE)
+- hx_ple_date (Date (YYYY-MM-DD)): Protein-losing enteropathy (PLE) date
+- hx_renal_dysfxn (Boolean (True/False)): Renal dysfunction
+- hx_renal_dysfxn_date (Date (YYYY-MM-DD)): Renal dysfunction date
+- hx_seizures (Boolean (True/False)): Seizures
+- hx_seizures_date (Date (YYYY-MM-DD)): Seizures date
+- hx_stroke_nonperiop (Boolean (True/False)): Stroke (non-peri op)
+- hx_stroke_nonperiop_date (Date (YYYY-MM-DD)): Stroke (non-peri op) date
+- hx_stroke_periop (Boolean (True/False)): Stroke (peri op)
+- hx_stroke_periop_date (Date (YYYY-MM-DD)): Stroke (peri op) date
+- hx_thrombus (Boolean (True/False)): Thrombus
+- hx_thrombus_date (Date (YYYY-MM-DD)): Thrombus date
+- hx_thrombus_loc___branch_pas (Boolean (True/False)): Thrombus location (checkbox): Branch PA's
+- hx_thrombus_loc___fontan_or_right_atrium_ra (Boolean (True/False)): Thrombus location (checkbox): Fontan or right atrium (RA)
+- hx_thrombus_loc___inferior_vena_cava_ivc (Boolean (True/False)): Thrombus location (checkbox): Inferior vena cava (IVC)
+- hx_thrombus_loc___larger_ventricle (Boolean (True/False)): Thrombus location (checkbox): Larger ventricle
+- hx_thrombus_loc___left_atrium_la (Boolean (True/False)): Thrombus location (checkbox): Left atrium (LA)
+- hx_thrombus_loc___other (Boolean (True/False)): Thrombus location (checkbox): Other
+- hx_thrombus_loc___smaller_ventricle (Boolean (True/False)): Thrombus location (checkbox): Smaller ventricle
+- hx_thrombus_loc___superior_vena_cava_svc (Boolean (True/False)): Thrombus location (checkbox): Superior vena cava (SVC)
+- hx_thrombus_loc_notes (String (free-text notes)): Thrombus location (notes)
+- hx_tia (Boolean (True/False)): Transient ischemic attack (TIA)
+- hx_tia_date (Date (YYYY-MM-DD)): Transient ischemic attack (TIA) date
+- hx_tx_list (Boolean (True/False)): Transplant list
+- hx_tx_list_date (Date (YYYY-MM-DD)): Transplant list date
+- meds_acei (Boolean (True/False)): ACE Inhibitor
+- meds_anticoag (Boolean (True/False)): Anticoagulation
+- meds_anticoag_notes (Boolean (True/False)): Anticoagulation notes
+- meds_anticoag_type___apixaban_eliquis (Boolean (True/False)): Anticoagulation type (checkbox): Apixaban (Eliquis)
+- meds_anticoag_type___aspirin (Boolean (True/False)): Anticoagulation type (checkbox): Aspirin
+- meds_anticoag_type___clopidogrel_plavix (Boolean (True/False)): Anticoagulation type (checkbox): Clopidogrel (Plavix)
+- meds_anticoag_type___dabigatran_pradaxa (Boolean (True/False)): Anticoagulation type (checkbox): Dabigatran (Pradaxa)
+- meds_anticoag_type___low_molecular_weight_heparin_lovenox_enoxaparin (Boolean (True/False)): Anticoagulation type (checkbox): Low molecular weight heparin (Lovenox, enoxaparin)
+- meds_anticoag_type___other (Boolean (True/False)): Anticoagulation type (checkbox): Other
+- meds_anticoag_type___rivaroxaban_xarelto (Boolean (True/False)): Anticoagulation type (checkbox): Rivaroxaban (Xarelto)
+- meds_anticoag_type___warfarin_coumadin_jantoven (Boolean (True/False)): Anticoagulation type (checkbox): Warfarin (Coumadin, Jantoven)
+- meds_betablocker (Boolean (True/False)): Beta blocker
+- meds_diuretic (Boolean (True/False)): Diuretic
+- meds_psych (Boolean (True/False)): Antidepressant/ anti-anxiety, stimulant, antipsychotic, mood stabalizer
+- meds_vasodilator (Boolean (True/False)): Vasodilator
+- status_date_recorded (Date (YYYY-MM-DD)): Date of last documentation available for this assessment
+- hx_notes (String (free-text notes)): EP Comments/ Notes (Please document where to find history of positive finding)
+- hx_anxiety (Boolean (True/False)): Anxiety
+- hx_bleeding (Boolean (True/False)): Bleeding
+- hx_anxiety_date (Date (YYYY-MM-DD)): Anxiety date
+- hx_bleeding_date (Date (YYYY-MM-DD)): Bleeding date
+- hx_cva (Boolean (True/False)): Cerebral vascular accident (CVA) 
+- hx_chf (Boolean (True/False)): Chronic heart failure (CHF)
+- ep_notes (String (free-text notes)): EP notes
+- ep_comments (String (free-text notes)): EP comments 
+- hx_avm (Boolean (True/False)): AVM
+- hx_avm_date (Date (YYYY-MM-DD)): AVM date
+
+
+Database: cmr
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (String): Event ID
+- cmr_date (Date (YYYY-MM-DD)): CMR date
+- cmr_report (String): Report description
+- cmr_apc (Boolean): Visible aortopulmonary collaterals (APC)
+- cmr_apc_notes (String): Visible aortopulmonary collateral (APC) description
+- cmr_flow_asc_ao (Float): AAO (distal)
+- cmr_flow_avv (Float): Common atrioventricular valve (AVV) flow rate
+- cmr_flow_avv_mitral (Float): Mitral valve (MV) flow rate
+- cmr_flow_avv_tri (Float): Tricuspid valve (TV) flow rate
+- cmr_flow_desc_ao (Float): Descending aorta (DAO) flow rate
+- cmr_flow_fontan (Float): Fontan flow rate
+- cmr_flow_ivc (Float): Inferior vena cava (IVC) flow rate
+- cmr_flow_lpa (Float): Left pulmonary artery (LPA) flow rate
+- cmr_flow_lpv (Float): Left pulmonary vein (LPV) flow rate
+- cmr_flow_lsvc (Float): Left superior vena cava (LSVC) flow rate
+- cmr_flow_native_ao (Float): Native aorta (AO) flow rate
+- cmr_flow_neo_ao (Float): Neo-aorta (AO) flow rate
+- cmr_flow_qpqs (Float): QpQs
+- cmr_flow_qpqs_method (String): QpQs method
+- cmr_flow_qpqs_method_notes (String): QpQs method notes
+- cmr_flow_rf_ao (Float): Aortic or native aortic regurgitation fraction
+- cmr_flow_rf_mv (Float): Mitral or common atrioventricular regurgitation fraction
+- cmr_flow_rf_pa (Float): Pulmonary or neo-aortic regurgitation fraction 
+- cmr_flow_rf_tv (Float): Tricuspid valve regurgitation fraction
+- cmr_flow_rpa (Float): Right pulmonary artery (RPA) flow rate
+- cmr_flow_rpv (Float): Right pulmonary vein (RPV) flow rate
+- cmr_flow_rsvc (Float): Right superior vena cava (RSVC) flow rate
+- cmr_regurg_avv (Float): Qual AVVR by CMR
+- cmr_regurg_slv (Float): Qual AR/semi-lunar regurg by CMR
+- cmr_vvc (Boolean): Visible veno-venous collaterals (VVC)
+- cmr_vvc_notes (String): Visible veno-venous collaterals (VVC) description
+- cmr_age_at_cmr (Integer): Age at CMR (years)
+- cmr_not_fontan (Boolean): Not Fontan at CMR
+- cmr_technique (String): Technique
+- cmr_anatomy_notes (String): Anatomy description
+- cmr_bmi (Float): Body mass index (BMI)
+- cmr_contrast (String): Contrast type
+- cmr_contrast_agent_dose_ferumoxytol (Float): Contrast agent dose: Ferumoxytol (Ferahem)
+- cmr_contrast_agent_dose_gadobenate (Float): Contrast agent dose: Gadobenate dimeglumine (MultiHance)
+- cmr_contrast_agent_dose_gadobutrol (Float): Contrast agent dose: Gadobutrol (Gadavist, Gadovis)
+- cmr_contrast_agent_dose_gadodiamide (Float): Contrast agent dose: Gadodiamide (Omniscan)
+- cmr_contrast_agent_dose_gadofosveset (Float): Contrast agent dose: Gadofosveset trisodium (Ablavar, Vasovist)
+- cmr_contrast_agent_dose_gadopentetate (Float): Contrast agent dose: Gadopentetate dimeglumine (Magnevist)
+- cmr_contrast_agent_dose_gadoteric (Float): Contrast agent dose: Gadoteric acid, Gadoterate meglumine (Dotarem, Artirem)
+- cmr_contrast_agent_dose_gadoteridol (Float): Contrast agent dose: Gadoteridol (ProHance)
+- cmr_contrast_agent_dose_gadoversetamide (Float): Contrast agent dose: Gadoversetamide (OptiMARK)
+- cmr_contrast_agent_dose_gadoxetic (Float): Contrast agent dose Gadoxetic acid, Gadoxetate (Eovist)
+- cmr_contrast_agent_dose_other (Float): Contrast agent dose: other
+- cmr_contrast_agent_dose_unknown (Float): Contrast agent dose: Gadolinium unknown
+- cmr_contrast_agent_type___ferumoxytol_feraheme (Boolean): Contrast agent type: Ferumoxytol (Ferahem)
+- cmr_contrast_agent_type___gadobenate_dimeglumine_multihance (Boolean): Contrast agent type: Gadobenate dimeglumine (MultiHance)
+- cmr_contrast_agent_type___gadobutrol_gadavist_gadovist (Boolean): Contrast agent type: Gadobutrol (Gadavist, Gadovis)
+- cmr_contrast_agent_type___gadodiamide_omniscan (Boolean): Contrast agent type: Gadodiamide (Omniscan)
+- cmr_contrast_agent_type___gadofosveset_trisodium_ablavar_vasovist (Boolean): Contrast agent type: Gadofosveset trisodium (Ablavar, Vasovist)
+- cmr_contrast_agent_type___gadolinium_unknown (Boolean): Contrast agent type: Gadolinium unknown
+- cmr_contrast_agent_type___gadopentetate_dimeglumine_magnevist (Boolean): Contrast agent type: Gadopentetate dimeglumine (Magnevist)
+- cmr_contrast_agent_type___gadoteric_acid_gadoterate_meglumine_dotarem_artirem (Boolean): Contrast agent type: Gadoteric acid, Gadoterate meglumine (Dotarem, Artirem)
+- cmr_contrast_agent_type___gadoteridol_prohance (Boolean): Contrast agent type: Gadoteridol (ProHance)
+- cmr_contrast_agent_type___gadoversetamide_optimark (Boolean): Contrast agent type: Gadoversetamide (OptiMARK)
+- cmr_contrast_agent_type___gadoxetic_acid_gadoxetate_eovist (Boolean): Contrast agent type: Gadoxetic acid, Gadoxetate (Eovist)
+- cmr_contrast_agent_type___other (Boolean): Contrast agent type: other
+- cmr_contrast_agent_type_notes (String): Contrast agent type: other description
+- cmr_fontan_type (String): Fontan type at CMR
+- cmr_fontan_type_notes (String): Fontan type at CMR: other description
+- cmr_fontan_fen (String): Fenestration status at CMR
+- cmr_outside (Boolean): Outside CMR
+- cmr_pt_bp_le_dias (Float): Lower extremity diastolic blood pressure
+- cmr_pt_bp_le_mean (Float): Lower extremity mean blood pressure
+- cmr_pt_bp_le_sys (Float): Lower extremity systolic blood pressure
+- cmr_pt_bp_ue_dias (Float): Upper extremity diastolic blood pressure
+- cmr_pt_bp_ue_mean (Float): Upper extremity mean blood pressure
+- cmr_pt_bp_ue_sys (Float): Upper extremity systolic blood pressure
+- cmr_pt_bsa (Float): Body surface area (BSA) calculated
+- cmr_pt_bsa_rpt (Float): Body surface area (BSA) on report
+- cmr_pt_hct (Float): Hematocrit (Hct) 
+- cmr_pt_height (Float): Height
+- cmr_pt_hr (Integer): Heart rate 
+- cmr_pt_weight (Float): Weight
+- cmr_report_artifact_notes (String): Artifact description
+- cmr_report_notes (String): CMR Report description
+- cmr_sedation (Boolean): Sedation
+- cmr_tesla (Float): Tesla
+- cmr_tesla_notes (String): Tesla description
+- cmr_vendor (String): Scanner
+- cmr_vendor_notes (String): Scanner description
+- cmr_ambra (Boolean): In Ambra?
+- cmr_ambra_tech_issue (String): Ambra technical issue description
+- cmr_contour (Boolean): Single ventricle contour?
+- cmr_fxn_notes (String): CMR function description notes
+- cmr_lge (Boolean): Late gadolinium enhancement (LGE)
+- cmr_lge_location___larger_systemic_ventricle_includes_ventricular_septum (String): Location of late gadolinium enhancement (LGE): Larger systemic ventricle (includes_ventricular_septum)
+- cmr_lge_location___other (String): Location of late gadolinium enhancement (LGE): other
+- cmr_lge_location___papillary_muscles (String): Location of late gadolinium enhancement (LGE): Papillary muscle(s)
+- cmr_lge_location___prior_sano_conduit_insertion_site (String): Location of late gadolinium enhancement (LGE): Prior Sano conduit insertion site
+- cmr_lge_location___septal_insertion_site (String): Location of late gadolinium enhancement (LGE): Septal insertion site
+- cmr_lge_location___small_systemic_ventricle (String): Location of late gadolinium enhancement (LGE): Small systemic ventricle
+- cmr_lge_location___subendocardial_fibroelastosis (String): Location of late gadolinium enhancement (LGE): (Sub)endocardial fibroelastosis
+- cmr_lge_location___unable_to_determine (String): Location of late gadolinium enhancement (LGE): Unable to determine
+- cmr_lge_notes (String): Description of late gadolinium enhancement (LGE)
+- cmr_lge_perform (Boolean): LGE performed?
+- cmr_lv_edv (Float): Left ventricle end-diastolic volume
+- cmr_lv_ef (Float): Left ventricle ejection fraction (EF)
+- cmr_lv_esv (Float): Left ventricle end-systolic volume
+- cmr_lv_mass (Float): Left ventricle mass
+- cmr_lv_mvr (Float): Mass to volume ratio
+- cmr_lv_sv (Float): Left ventricle stroke volume
+- cmr_sv_mass_height27 (Float): Effective combined single ventricle mass / (Ht)^2.7
+- cmr_rv_edv (Float): Right ventricle end-diastolic volume
+- cmr_rv_ef (Float): Right ventricle ejection fraction (EF)
+- cmr_rv_esv (Float): Right ventricle end-systolic volume
+- cmr_rv_mass (Float): Right ventricle mass
+- cmr_rv_mvr (Float): RV MVR
+- cmr_rv_sv (Float): RV SV
+- cmr_strain_gcs_2v (Float): Global Circumfrential Peak Strain
+- cmr_strain_gcs_phase (Integer): # phases GCS
+- cmr_strain_gcsr_2v (Float): Circ Strain Rate
+- cmr_strain_gls_2v (Float): Global Longitudinal Peak Strain
+- cmr_strain_gls_phase (Integer): # phases GLS
+- cmr_strain_glsr_2v (Float): Long Peak Strain Rate
+- cmr_strain_grs_2v (Float): Global Radial Strain
+- cmr_strain_grsr_2v (Float): Radial Strain Rate
+- cmr_sv_edv (Float): Effective combined single ventricle end-diastolic volume 
+- cmr_sv_edv_bsa1 (Float): Effective combined single ventricle end-diastolic volume / BSA
+- cmr_sv_edv_bsa13 (Float): Effective combined single ventricle end-diastolic volume / (BSA)^1.3
+- cmr_sv_ef (Float): Effective combined single ventricle ejection fraction
+- cmr_sv_esv (Float): Effective combined single ventricle end-systolic volume 
+- cmr_sv_esv_bsa1 (Float): Effective combined single ventricle end-systolic volume / BSA
+- cmr_sv_esv_bsa13 (Float): Effective combined single ventricle end-systolic volume / (BSA)^1.3
+- cmr_sv_mass (Float): Effective combined single ventricle  mass
+- cmr_sv_mass_bsa1 (Float): Effective combined single ventricle  mass / BSA
+- cmr_sv_mass_bsa13 (Float): Effective combined single ventricle  mass / (BSA)^1.3
+- cmr_sv_mvr (Float): Effective combined single ventricle mass to volume ratio
+- cmr_sv_mvr_bsa1 (Float): Effective combined single ventricle mass to volume ratio / BSA
+- cmr_sv_mvr_bsa13 (Float): Effective combined single ventricle mass to volume ratio / (BSA)^1.3
+- cmr_sv_sv (Float): Effective combined single ventricle stroke volume 
+- cmr_sv_sv_bsa1 (Float): Effective combined single ventricle stroke volume / BSA
+- cmr_sv_sv_bsa13 (Float): Effective combined single ventricle stroke volume / (BSA)^1.3
+- cmr_vent_systemic_circ (String): Which ventricles contribute to systemic circultation
+- cmr_mass_height27 (Float): SV Mass / Ht^2.7
+- cmr_ecv_mean (Float): ECV mean
+- cmr_ecv_sd (Float): ECV SD
+- cmr_o2_sat (Float): O2 saturation
+- cmr_t1_mean (Float): T1 Mean
+- cmr_t1_sd (Float): T1 StDev
+- cmr_flow_diff_rpa (Float): RPA flow %
+- cmr_flow_diff_lpa (Float): LPA flow %
+- cmr_dim_aao1 (Float): Asc AO
+- cmr_dim_aao2 (Float): Asc AO
+- cmr_dim_lpa1 (Float): LPA
+- cmr_dim_lpa2 (Float): LPA
+- cmr_dim_rpa1 (Float): RPA
+- cmr_dim_rpa2 (Float): RPA
+- cmr_dim_ao_is1 (Float): Aortic isthmus
+- cmr_dim_ao_is2 (Float): Aortic isthmus
+- cmr_dim_ao_arch_distal_trans1 (Float): Distal transverse aortic arch
+- cmr_dim_ao_arch_distal_trans2 (Float): Distal transverse aortic arch
+- cmr_dim_ao_desc1 (Float): Descending aorta
+- cmr_dim_ao_desc2 (Float): Descending aorta
+- cmr_dim_neoao_root1 (Float): Neo-aortic root
+- cmr_dim_neoao_root2 (Float): Neo-aortic root
+- cmr_dim_ao_valve_annulus1 (Float): Aortic valve annulus
+- cmr_dim_ao_valve_annulus2 (Float): Aortic valve annulus
+- cmr_dim_neoao_valve_annulus1 (Float): Neo-aortic valve annulus
+- cmr_dim_neoao_valve_annulus2 (Float): Neo-aortic valve annulus
+- cmr_dim_ao_arch_prox_trans1 (Float): Proximal transverse aortic arch
+- cmr_dim_ao_arch_prox_trans2 (Float): Proximal transverse aortic arch
+- cmr_dim_tri_valve_annulus_lat1 (Float): Tricuspid valve annulus lateral
+- cmr_dim_mitral_valve_annulus_lat1 (Float): Mitral valve annulus lateral
+- cmr_dim_tri_valve_annulus_antpos1 (Float): Tricuspid valve annulus anteroposterior
+- cmr_dim_mitral_valve_annulus_antpos1 (Float): Mitral valve annulus anteroposterior
+- cmr_dim_commonav_valve_annulus_lat1 (Float): Common atrioventricular valve annulus lateral
+- cmr_dim_ao_root_sa1 (Float): Aortic root sinus to commissure (short-axis)
+- cmr_sequence_notes (String): Sequence notes
+- cmr_dim_ao_root_antpos1 (Float): Anteroposterior diameter
+- cmr_dim_ao_root_trans1 (Float): Transverse diameter
+- cmr_exam_reason (String): Reason for exam
+
+
+Database: cath
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- cath_date (Date): Date of catheterization
+- cath_press_fontan (Float): Representative Mean Fontan pressure
+- cath_press_sysvent (Float): Systemic ventricle end-diastolic pressure
+- cath_press_lpa_dist (Float): Mean distal LPA pulmonary artery pressure
+- cath_press_lpa_atrial (Float): Mean atrial pressure or LPA pulmonary capillary wedge
+- cath_press_rpa_dist (Float): Mean atrial pressure or RPA pulmonary capillary wedge
+- cath_press_rpa_atrial (Float): Mean atrial pressure or RPA pulmonary capillary wedge
+- cath_pvr (Float): Pulmonary vascular resistance (PVR)
+- cath_ci (Float): Systemic Cardiac Index (Qs)
+- cath_qpqs (Float): Qp/Qs
+- cath_sat (Float): Directly measured systemic arterial saturation on room air
+- cath_interven_notes (String): Intervention notes
+- cath_report_notes (String): Other relevant report comments or concerns
+- cath_interven___no_interventions (Boolean): Cath intervention: No interventions
+- cath_interven___fontan_fenestration_closure (Boolean): Cath intervention: Fontan fenestration closure
+- cath_interven___fontan_fenestration_creation (Boolean): Cath intervention: Fontan fenestration creation
+- cath_interven___apc_coil_occ_or_gel (Boolean): Cath intervention: Aortopulmonary collateral coil occlusion or gelfoam
+- cath_interven___vvc_coil_occ_or_gel (Boolean): Cath intervention: Veno-venous collateral coil occlusion or gelfoam
+- cath_interven___bpa_balloon_dilation_or_stent (Boolean): Cath intervention: BPA balloon dilation or stenting
+- cath_interven___pulmonary_vein_balloon_dilation_or_stenting (Boolean): Cath intervention: Pulmonary vein balloon dilation or stenting
+- cath_interven___fontan_svc_ivc_balloon_dilation_or_stent (Boolean): Cath intervention: Fontan/Superior vena cava/Inferior vena cava balloon dilation or stenting
+- cath_interven___asc_ao_or_stansel_balloon_dilation_or_stent (Boolean): Cath intervention: Ascending aorta or Stansel balloon dilation or stenting
+- cath_interven___trans_arch_or_ao_isth_balloon_dilation_or_stent (Boolean): Cath intervention: Transverse arch or aortic isthmus balloon dilation or stenting
+- cath_interven___other_intervention (Boolean): Cath intervention: Other intervention
+
+
+Database: echo
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- echo_date (Date): Date of echocardiogram
+- echo_avvr (Float): Total atrioventricular valve regurgitation
+- echo_avvs (Boolean): Atrioventriuclar valve stenosis
+- echo_avvs_mg (Float): If 'yes' to atrioventricular valve stenosis, provide mean gradient
+- echo_avvs_hr (Integer): If 'yes' to atrioventricular valve stenosis, provide heart rate
+- echo_slvr (Float): Total semi-lunar valve regurgitation
+- echo_slvs (Boolean): Semi-lunar valve stenosis
+- echo_slvs_mig (Float): If 'yes' to semi-lunar valve stenosis, provide highest maximum instantaneous gradient
+- echo_slvs_mg (Float): If 'yes' to semi-lunar valve stenosis, provide highest mean gradient
+- echo_fen_patent (Boolean): Patent fenestration or baffle leak
+- echo_fen_patent_mg (Float): If 'yes' to patent fenestration or baffle leak, provide mean gradient
+- echo_obst_arch (Boolean): Arch obstruction
+- echo_obst_arch_mig (Float): If 'yes' to arch obstruction, provide Dooppler maximum instantaneous gradient
+- echo_obst_pv (Boolean): Pulmonary venous obstruction
+- echo_obst_pv_notes (String): If 'yes' to pulmonary venous obstruction, provide details
+- echo_obst_fontan (Boolean): Fontan pathway obstruction
+- echo_obst_fontan_notes (String): If 'yes' to Fontan pathway obstruction, provide details
+- echo_obst_branchpa (Boolean): Branch pulmonary artery obstruction
+- echo_obst_branchpa_notes (String): If 'yes' to branch pulmonary artery obstruction, provide details
+- echo_thrombus (Boolean): Visible intracardiac or vascular thrombus
+- echo_thrombus_notes (String): If 'yes' to intracardiac or vascular thrombus, describe
+- echo_report_notes (String): Other relevant report comments or concerns
+- echo_sys_func (String): Qualitative systolic function dominant ventricle
+
+
+Database: est
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- est_date (Date): Ex. stress test date
+- est_pt_height (Float): Height - measurement (cm)
+- est_pt_weight (Float): Weight - measurement (kg)
+- est_protocol (String): Protocol
+- est_hr_pre_exercise (Integer): Baseline/Pre-exercise heart rate
+- est_sat_pre_exercise (Float): Baseline O2 SAT (%)
+- est_hr_vat (Integer): Heart Rate at VAT (bpm)
+- est_vo2_vat (Float): VO2 at VAT
+- est_wr_peak (Float): Peak Work Rate (W)
+- est_wr_pp (Float): Predicted  Work Rate (%)
+- est_vo2_peak (Float): Peak Relative VO2 (ml/kg)
+- est_vo2_pp (Float): Predicted Peak VO2 (%)
+- est_o2pulse_peak (Float): Peak O2 Pulse (ml/beat)
+- est_hr_peak (Integer): Peak Heart Rate (bpm)
+- est_hr_pp (Float): Predicted Heart Rate (%)
+- est_rer_peak (Float): Peak RER
+- est_sat_peak (Float): Peak Saturation
+- est_vevco2 (Float): VE/VCO2 Slope
+- est_report_notes (String): Report notes
+
+
+Database: cct
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (String): Event ID
+- ct_date (Date): CCT date
+- ct_age_at_ct (Float): Age at CT (years)
+- ct_anatomy_notes (String): Anatomy description
+- ct_apc (Boolean): Visible aortopulmonary collaterals (APC)
+- ct_apc_notes (String): Visible aortopulmonary collateral (APC) description
+- ct_bmi (Float): Body mass index (BMI)
+- ct_contour (Boolean): Single ventricle contour?
+- ct_contrast_total (Float): Contrast total
+- ct_dim_aao1 (Float): Asc AO
+- ct_dim_aao2 (Float): Asc AO
+- ct_dim_ao_arch_distal_trans1 (Float): Distal transverse aortic arch
+- ct_dim_ao_arch_distal_trans2 (Float): Distal transverse aortic arch
+- ct_dim_ao_arch_prox_trans1 (Float): Proximal transverse aortic arch
+- ct_dim_ao_arch_prox_trans2 (Float): Proximal transverse aortic arch
+- ct_dim_ao_desc1 (Float): Descending aorta
+- ct_dim_ao_desc2 (Float): Descending aorta
+- ct_dim_ao_is1 (Float): Aortic isthmus
+- ct_dim_ao_is2 (Float): Aortic isthmus
+- ct_dim_ao_root_antpos1 (Float): Anteroposterior diameter
+- ct_dim_ao_root_sa1 (Float): Aortic root sinus to commissure (short-axis)
+- ct_dim_ao_root_trans1 (Float): Transverse diameter
+- ct_dim_ao_valve_annulus1 (Float): Aortic valve annulus
+- ct_dim_ao_valve_annulus2 (Float): Aortic valve annulus
+- ct_dim_commonav_valve_annulus_lat1 (Float): Common atrioventricular valve annulus lateral
+- ct_dim_lpa1 (Float): LPA
+- ct_dim_lpa2 (Float): LPA
+- ct_dim_mitral_valve_annulus_antpos1 (Float): Mitral valve annulus anteroposterior
+- ct_dim_mitral_valve_annulus_lat1 (Float): Mitral valve annulus lateral
+- ct_dim_neoao_root1 (Float): Neo-aortic root
+- ct_dim_neoao_root2 (Float): Neo-aortic root
+- ct_dim_neoao_valve_annulus1 (Float): Neo-aortic valve annulus
+- ct_dim_neoao_valve_annulus2 (Float): Neo-aortic valve annulus
+- ct_dim_rpa1 (Float): RPA
+- ct_dim_rpa2 (Float): RPA
+- ct_dim_tri_valve_annulus_antpos1 (Float): Tricuspid valve annulus anteroposterior
+- ct_dim_tri_valve_annulus_lat1 (Float): Tricuspid valve annulus lateral
+- ct_ecv_mean (Float): ECV Mean
+- ct_ecv_sd (Float): ECV StDev
+- ct_exam_reason (String): Reason for exam
+- ct_flow_asc_ao (Float): AAO (distal)
+- ct_flow_avv (Float): Common atrioventricular valve (AVV) flow rate
+- ct_flow_avv_mitral (Float): Mitral valve (MV) flow rate
+- ct_flow_avv_tri (Float): Tricuspid valve (TV) flow rate
+- ct_flow_desc_ao (Float): Descending aorta (DAO) flow rate
+- ct_flow_diff_lpa (Float): LPA flow %
+- ct_flow_diff_rpa (Float): RPA flow %
+- ct_flow_fontan (Float): Fontan flow rate
+- ct_flow_ivc (Float): Inferior vena cava (IVC) flow rate
+- ct_flow_lpa (Float): Left pulmonary artery (LPA) flow rate
+- ct_flow_lpv (Float): Left pulmonary vein (LPV) flow rate
+- ct_flow_lsvc (Float): Left superior vena cava (LSVC) flow rate
+- ct_flow_native_ao (Float): Native aorta (AO) flow rate
+- ct_flow_neo_ao (Float): Neo-aorta (AO) flow rate
+- ct_flow_qpqs (Float): QpQs
+- ct_flow_qpqs_method (String): QpQs method
+- ct_flow_qpqs_method_notes (String): QpQs method notes
+- ct_flow_rf_ao (Float): Aortic or native aortic regurgitation fraction
+- ct_flow_rf_mv (Float): Mitral or common atrioventricular regurgitation fraction
+- ct_flow_rf_pa (Float): Pulmonary or neo-aortic regurgitation fraction 
+- ct_flow_rf_tv (Float): Tricuspid valve regurgitation fraction
+- ct_flow_rpa (Float): Right pulmonary artery (RPA) flow rate
+- ct_flow_rpv (Float): Right pulmonary vein (RPV) flow rate
+- ct_flow_rsvc (Float): Right superior vena cava (RSVC) flow rate
+- ct_fontan_fen (String): Fenestration status at CMR
+- ct_fontan_type (String): Fontan type at CMR
+- ct_fontan_type_notes (String): Fontan type at CMR: other description
+- ct_fxn_notes (String): CCT function description notes
+- ct_lv_edv (Float): Left ventricle end-diastolic volume
+- ct_lv_ef (Float): Left ventricle ejection fraction (EF)
+- ct_lv_esv (Float): Left ventricle end-systolic volume
+- ct_lv_mass (Float): Left ventricle mass
+- ct_lv_mvr (Float): Mass to volume ratio
+- ct_lv_sv (Float): Left ventricle stroke volume
+- ct_mass_height27 (Float): SV Mass / Ht^2.7
+- ct_o2_sat (Float): O2 saturation
+- ct_pt_bp_le_dias (Integer): Lower extremity diastolic blood pressure
+- ct_pt_bp_le_mean (Integer): Lower extremity mean blood pressure
+- ct_pt_bp_le_sys (Integer): Lower extremity systolic blood pressure
+- ct_pt_bp_ue_dias (Integer): Upper extremity diastolic blood pressure
+- ct_pt_bp_ue_mean (Integer): Upper extremity mean blood pressure
+- ct_pt_bp_ue_sys (Integer): Upper extremity systolic blood pressure
+- ct_pt_bsa (Float): Body surface area (BSA) calculated
+- ct_pt_bsa_rpt (Float): Body surface area (BSA) on report
+- ct_pt_hct (Float): Hematocrit (Hct) 
+- ct_pt_height (Float): Height
+- ct_pt_hr (Integer): Heart rate 
+- ct_pt_weight (Float): Weight
+- ct_regurg_avv (String): Qual AVVR by CMR
+- ct_regurg_slv (String): Qual AR/semi-lunar regurg by CMR
+- ct_report (String): Report description
+- ct_report_artifact_notes (String): Artifact description
+- ct_report_notes (String): CMR Report description
+- ct_rv_edv (Float): Right ventricle end-diastolic volume
+- ct_rv_ef (Float): Right ventricle ejection fraction (EF)
+- ct_rv_esv (Float): Right ventricle end-systolic volume
+- ct_rv_mass (Float): Right ventricle mass
+- ct_rv_mvr (Float): RV MVR
+- ct_rv_sv (Float): RV SV
+- ct_sedation (String): Sedation
+- ct_sequence (String): Sequence
+- ct_sequence_notes (String): Sequence notes
+- ct_strain_gcs_2v (Float): Global Circumfrential Peak Strain
+- ct_strain_gcs_phase (Integer): # phases GCS
+- ct_strain_gcsr_2v (Float): Circ Strain Rate
+- ct_strain_gls_2v (Float): Global Longitudinal Peak Strain
+- ct_strain_gls_phase (Integer): # phases GLS
+- ct_strain_glsr_2v (Float): Long Peak Strain Rate
+- ct_strain_grs_2v (Float): Global Radial Strain
+- ct_strain_grsr_2v (Float): Radial Strain Rate
+- ct_sv_edv (Float): Effective combined single ventricle end-diastolic volume 
+- ct_sv_edv_bsa1 (Float): Effective combined single ventricle end-diastolic volume / BSA
+- ct_sv_edv_bsa13 (Float): Effective combined single ventricle end-diastolic volume / (BSA)^1.3
+- ct_sv_ef (Float): Effective combined single ventricle ejection fraction
+- ct_sv_esv (Float): Effective combined single ventricle end-systolic volume 
+- ct_sv_esv_bsa1 (Float): Effective combined single ventricle end-systolic volume / BSA
+- ct_sv_esv_bsa13 (Float): Effective combined single ventricle end-systolic volume / (BSA)^1.3
+- ct_sv_mass (Float): Effective combined single ventricle  mass
+- ct_sv_mass_bsa1 (Float): Effective combined single ventricle  mass / BSA
+- ct_sv_mass_bsa13 (Float): Effective combined single ventricle  mass / (BSA)^1.3
+- ct_sv_mass_height27 (Float): Effective combined single ventricle mass / (Ht)^2.7
+- ct_sv_mvr (Float): Effective combined single ventricle mass to volume ratio
+- ct_sv_mvr_bsa1 (Float): Effective combined single ventricle mass to volume ratio / BSA
+- ct_sv_mvr_bsa13 (Float): Effective combined single ventricle mass to volume ratio / (BSA)^1.3
+- ct_sv_sv (Float): Effective combined single ventricle stroke volume 
+- ct_sv_sv_bsa1 (Float): Effective combined single ventricle stroke volume / BSA
+- ct_sv_sv_bsa13 (Float): Effective combined single ventricle stroke volume / (BSA)^1.3
+- ct_t1_mean (Float): T1 Mean
+- ct_t1_sd (Float): T1 StDev
+- ct_technique (String): Technique
+- ct_tesla (Float): Tesla
+- ct_tesla_notes (String): Tesla description
+- ct_tube_voltage (Integer): Tube Voltage (kV)
+- ct_vendor (String): Scanner
+- ct_vendor_notes (String): Scanner description
+- ct_vent_systemic_circ (String): Which ventricles contribute to systemic circultation
+- ct_vvc (String): Visible veno-venous collaterals (VVC)
+- ct_vvc_notes (String): Visible veno-venous collaterals (VVC) description
