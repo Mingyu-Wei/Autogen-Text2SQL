@@ -1,0 +1,23 @@
+Table: est
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- est_date (Date): Ex. stress test date
+- est_pt_height (Float): Height - measurement (cm)
+- est_pt_weight (Float): Weight - measurement (kg)
+- est_protocol (String): Protocol
+- est_hr_pre_exercise (Integer): Baseline/Pre-exercise heart rate
+- est_sat_pre_exercise (Float): Baseline O2 SAT (%)
+- est_hr_vat (Integer): Heart Rate at VAT (bpm)
+- est_vo2_vat (Float): VO2 at VAT
+- est_wr_peak (Float): Peak Work Rate (W)
+- est_wr_pp (Float): Predicted  Work Rate (%)
+- est_vo2_peak (Float): Peak Relative VO2 (ml/kg)
+- est_vo2_pp (Float): Predicted Peak VO2 (%)
+- est_o2pulse_peak (Float): Peak O2 Pulse (ml/beat)
+- est_hr_peak (Integer): Peak Heart Rate (bpm)
+- est_hr_pp (Float): Predicted Heart Rate (%)
+- est_rer_peak (Float): Peak RER
+- est_sat_peak (Float): Peak Saturation
+- est_vevco2 (Float): VE/VCO2 Slope
+- est_report_notes (String): Report notes

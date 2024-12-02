@@ -1,0 +1,18 @@
+Table: pt_master
+Columns:
+- mrn (String): Medical record number (MRN)
+- pt_name_last (String): Patient last name
+- pt_name_first (String): Patient first name
+- pt_name_middle (String (nullable)): Patient middle name
+- pt_dob (Date): Date of birth
+- pt_sex (String or Categorical): Patient sex
+- pt_last_alive_date (Date (nullable)): Patient last alive date
+- pt_followed_at (Date): Patient followed at
+- pt_death_date (Date (nullable)): Patient death date
+- pt_death (Boolean): Patient died
+- pt_death_cod (String (nullable)): Patient cause of death
+- pt_death_cod_notes (String (nullable)): Patient cause of death description
+- pt_death_notes (String (nullable)): Patient death description
+- pt_tx_received (Boolean): Patient received a heart transplant
+- pt_tx_received_date (Date (nullable)): Heart transplant date
+- pt_notes (String (nullable)): Patient notes

@@ -1,0 +1,120 @@
+Table: status
+Columns:
+- mrn (String): Medical record number (MRN)
+- status_assess_date (Date (YYYY-MM-DD)): Date of assessment
+- hx_nyha (String (categorical)): NYHA class
+- hx_nyha_date (Date (YYYY-MM-DD)): NYHA class date
+- hx_arrest_nonperi_date (Date (YYYY-MM-DD)): Cardiac arrest (non-peri procedure) date
+- hx_arrest_nonperi_notes (String (free-text notes)): Cardiac arrest (non-peri procedure) notes
+- hx_arrest_peri_date (Date (YYYY-MM-DD)): Cardiac arrest (peri procedure) date
+- hx_arrest_peri_notes (String (free-text notes)): Cardiac arrest (peri procedure) notes
+- hx_ascites (Boolean (True/False)): Ascites
+- hx_ascites_date (Date (YYYY-MM-DD)): Ascites date
+- hx_cardiacarrest_nonperiop (Boolean (True/False)): Cardiac arrest (non-peri procedure)
+- hx_cardiacarrest_periop (Boolean (True/False)): Cardiac arrest (peri procedure)
+- hx_ecmo (Boolean (True/False)): ECMO
+- hx_ecmo_cannulations (Integer (count)): Total Number of ECMO cannulations
+- hx_ecmo_date (Date (YYYY-MM-DD)): ECMO date
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): A Fib
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): A Flutter
+- hx_ep_atrial_arrhythmia (Boolean (True/False)): Atrial SVT
+- hx_ep_atrial_arrhythmia_date (Date (YYYY-MM-DD)): Atrial Arrhythmia: AFib/Flutter/SVT date
+- hx_ep_cardiover_elect_date (Date (YYYY-MM-DD)): Cardioversion (elective) date
+- hx_ep_cardiover_emerg_date (Date (YYYY-MM-DD)): Cardioversion (emergent) date
+- hx_ep_cardiover_emerg_notes (String (free-text notes)): Cardioversion (emergent) details
+- hx_ep_cardioversion_elect (Boolean (True/False)): Cardioversion (elective)
+- hx_ep_cardioversion_nonele (Boolean (True/False)): Cardioversion (emergent)
+- hx_ep_defib (Boolean (True/False)): Defibrilator
+- hx_ep_defib_date (Date (YYYY-MM-DD)): Defibrilator date
+- hx_ep_defib_rsn___atrial_arrhythmia (Boolean (True/False)): Reason for Defibrilator (checkbox): Atrial Arrhythmia
+- hx_ep_defib_rsn___history_of_cardiac_arrest (Boolean (True/False)): Reason for Defibrilator (checkbox): History of Cardiac Arrest
+- hx_ep_defib_rsn___history_of_syncope (Boolean (True/False)): Reason for Defibrilator (checkbox): History of Syncope
+- hx_ep_defib_rsn___other (Boolean (True/False)): Reason for Defibrilator (checkbox): Other
+- hx_ep_defib_rsn___ventricular_arrhythmia (Boolean (True/False)): Reason for Defibrilator (checkbox): Ventricular Arrhythmia
+- hx_ep_defib_rsn_notes (String (free-text notes)): Reason for Defibrilator (notes)
+- hx_ep_nsvt (Boolean (True/False)): Nonsustained ventricular tachycardia (NSVT) 
+- hx_ep_nsvt_date (Date (YYYY-MM-DD)): Nonsustained ventricular tachycardia (NSVT) date
+- hx_ep_pacemaker (Boolean (True/False)): Pacemaker
+- hx_ep_pacemaker_date (Date (YYYY-MM-DD)): Pacemaker date
+- hx_ep_pacemaker_rsn___arrhythmia (Boolean (True/False)): Reason for Pacemaker (checkbox): Arrhythmia
+- hx_ep_pacemaker_rsn___heart_block (Boolean (True/False)): Reason for Pacemaker (checkbox): Heart block
+- hx_ep_pacemaker_rsn___other (Boolean (True/False)): Reason for Pacemaker (checkbox): other
+- hx_ep_pacemaker_rsn___sinus_node_dysfunction (Boolean (True/False)): Reason for Pacemaker (checkbox): Sinus node dysfunction
+- hx_ep_pacemaker_rsn_notes (String (free-text notes)): Reason for Pacemaker (notes)
+- hx_ep_sinus_dysfxn (Boolean (True/False)): Sinus node dysfunction
+- hx_ep_sinus_dysfxn_date (Date (YYYY-MM-DD)): Sinus node dysfunction date
+- hx_ep_study (Boolean (True/False)): EP Study
+- hx_ep_study_date (Date (YYYY-MM-DD)): EP Study date
+- hx_ep_study_findings___atrial_flutter_ablation (Boolean (True/False)): EP Study findings (checkbox): Atrial Flutter Ablation
+- hx_ep_study_findings___atrial_tachyarrhythmia_ablation (Boolean (True/False)): EP Study findings (checkbox) Atrial Tachyarrhythmia Ablation
+- hx_ep_study_findings___inducible_atrial_tachyarrhythmia (Boolean (True/False)): EP Study findings (checkbox): Inducible Atrial Tachyarrhythmia
+- hx_ep_study_findings___inducible_ventricular_tachyarrhythmia (Boolean (True/False)): EP Study findings (checkbox): Inducible Ventricular Tachyarrhythmia
+- hx_ep_study_findings___other (Boolean (True/False)): EP Study findings (checkbox): Other
+- hx_ep_study_findings___ventricular_tachyarrhythmia_ablation (Boolean (True/False)): EP Study findings (checkbox): Ventricular Tachyarrhythmia Ablation
+- hx_ep_study_findings_notes (String (free-text notes)): EP Study findings (notes)
+- hx_ep_vt (Boolean (True/False)): Sustained ventricular tachycardia (SVT) 
+- hx_ep_vt_date (Date (YYYY-MM-DD)): Sustained ventricular tachycardia (SVT) date
+- hx_hcc (Boolean (True/False)): HCC
+- hx_hcc_date (Date (YYYY-MM-DD)): HCC date
+- hx_hemoptysis (Boolean (True/False)): Hemoptysis
+- hx_hemoptysis_date (Date (YYYY-MM-DD)): Hemoptysis date
+- hx_liver (Boolean (True/False)): Liver Disease
+- hx_liver_date (Date (YYYY-MM-DD)): Liver Disease date
+- hx_pe_chylous (Boolean (True/False)): Pleural Effusion (chylous)
+- hx_pe_chylous_date (Date (YYYY-MM-DD)): Pleural Effusion (chylous) date
+- hx_pe_nonchylous (Boolean (True/False)): Pleural Effusion
+- hx_pe_nonchylous_date (Date (YYYY-MM-DD)): Pleural Effusion date
+- hx_plast_bronch (Boolean (True/False)): Plastic Bronchitis
+- hx_plast_bronch_date (Date (YYYY-MM-DD)): Plastic Bronchitis date
+- hx_ple (Boolean (True/False)): Protein-losing enteropathy (PLE)
+- hx_ple_date (Date (YYYY-MM-DD)): Protein-losing enteropathy (PLE) date
+- hx_renal_dysfxn (Boolean (True/False)): Renal dysfunction
+- hx_renal_dysfxn_date (Date (YYYY-MM-DD)): Renal dysfunction date
+- hx_seizures (Boolean (True/False)): Seizures
+- hx_seizures_date (Date (YYYY-MM-DD)): Seizures date
+- hx_stroke_nonperiop (Boolean (True/False)): Stroke (non-peri op)
+- hx_stroke_nonperiop_date (Date (YYYY-MM-DD)): Stroke (non-peri op) date
+- hx_stroke_periop (Boolean (True/False)): Stroke (peri op)
+- hx_stroke_periop_date (Date (YYYY-MM-DD)): Stroke (peri op) date
+- hx_thrombus (Boolean (True/False)): Thrombus
+- hx_thrombus_date (Date (YYYY-MM-DD)): Thrombus date
+- hx_thrombus_loc___branch_pas (Boolean (True/False)): Thrombus location (checkbox): Branch PA's
+- hx_thrombus_loc___fontan_or_right_atrium_ra (Boolean (True/False)): Thrombus location (checkbox): Fontan or right atrium (RA)
+- hx_thrombus_loc___inferior_vena_cava_ivc (Boolean (True/False)): Thrombus location (checkbox): Inferior vena cava (IVC)
+- hx_thrombus_loc___larger_ventricle (Boolean (True/False)): Thrombus location (checkbox): Larger ventricle
+- hx_thrombus_loc___left_atrium_la (Boolean (True/False)): Thrombus location (checkbox): Left atrium (LA)
+- hx_thrombus_loc___other (Boolean (True/False)): Thrombus location (checkbox): Other
+- hx_thrombus_loc___smaller_ventricle (Boolean (True/False)): Thrombus location (checkbox): Smaller ventricle
+- hx_thrombus_loc___superior_vena_cava_svc (Boolean (True/False)): Thrombus location (checkbox): Superior vena cava (SVC)
+- hx_thrombus_loc_notes (String (free-text notes)): Thrombus location (notes)
+- hx_tia (Boolean (True/False)): Transient ischemic attack (TIA)
+- hx_tia_date (Date (YYYY-MM-DD)): Transient ischemic attack (TIA) date
+- hx_tx_list (Boolean (True/False)): Transplant list
+- hx_tx_list_date (Date (YYYY-MM-DD)): Transplant list date
+- meds_acei (Boolean (True/False)): ACE Inhibitor
+- meds_anticoag (Boolean (True/False)): Anticoagulation
+- meds_anticoag_notes (Boolean (True/False)): Anticoagulation notes
+- meds_anticoag_type___apixaban_eliquis (Boolean (True/False)): Anticoagulation type (checkbox): Apixaban (Eliquis)
+- meds_anticoag_type___aspirin (Boolean (True/False)): Anticoagulation type (checkbox): Aspirin
+- meds_anticoag_type___clopidogrel_plavix (Boolean (True/False)): Anticoagulation type (checkbox): Clopidogrel (Plavix)
+- meds_anticoag_type___dabigatran_pradaxa (Boolean (True/False)): Anticoagulation type (checkbox): Dabigatran (Pradaxa)
+- meds_anticoag_type___low_molecular_weight_heparin_lovenox_enoxaparin (Boolean (True/False)): Anticoagulation type (checkbox): Low molecular weight heparin (Lovenox, enoxaparin)
+- meds_anticoag_type___other (Boolean (True/False)): Anticoagulation type (checkbox): Other
+- meds_anticoag_type___rivaroxaban_xarelto (Boolean (True/False)): Anticoagulation type (checkbox): Rivaroxaban (Xarelto)
+- meds_anticoag_type___warfarin_coumadin_jantoven (Boolean (True/False)): Anticoagulation type (checkbox): Warfarin (Coumadin, Jantoven)
+- meds_betablocker (Boolean (True/False)): Beta blocker
+- meds_diuretic (Boolean (True/False)): Diuretic
+- meds_psych (Boolean (True/False)): Antidepressant/ anti-anxiety, stimulant, antipsychotic, mood stabalizer
+- meds_vasodilator (Boolean (True/False)): Vasodilator
+- status_date_recorded (Date (YYYY-MM-DD)): Date of last documentation available for this assessment
+- hx_notes (String (free-text notes)): EP Comments/ Notes (Please document where to find history of positive finding)
+- hx_anxiety (Boolean (True/False)): Anxiety
+- hx_bleeding (Boolean (True/False)): Bleeding
+- hx_anxiety_date (Date (YYYY-MM-DD)): Anxiety date
+- hx_bleeding_date (Date (YYYY-MM-DD)): Bleeding date
+- hx_cva (Boolean (True/False)): Cerebral vascular accident (CVA) 
+- hx_chf (Boolean (True/False)): Chronic heart failure (CHF)
+- ep_notes (String (free-text notes)): EP notes
+- ep_comments (String (free-text notes)): EP comments 
+- hx_avm (Boolean (True/False)): AVM
+- hx_avm_date (Date (YYYY-MM-DD)): AVM date

@@ -1,0 +1,5 @@
+.cache
+.venv
+tmp
+tmp_*.py
+*.png

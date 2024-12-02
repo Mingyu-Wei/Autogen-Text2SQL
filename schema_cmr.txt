@@ -1,0 +1,179 @@
+Table: cmr
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (String): Event ID
+- cmr_date (Date (YYYY-MM-DD)): CMR date
+- cmr_report (String): Report description
+- cmr_apc (Boolean): Visible aortopulmonary collaterals (APC)
+- cmr_apc_notes (String): Visible aortopulmonary collateral (APC) description
+- cmr_flow_asc_ao (Float): AAO (distal)
+- cmr_flow_avv (Float): Common atrioventricular valve (AVV) flow rate
+- cmr_flow_avv_mitral (Float): Mitral valve (MV) flow rate
+- cmr_flow_avv_tri (Float): Tricuspid valve (TV) flow rate
+- cmr_flow_desc_ao (Float): Descending aorta (DAO) flow rate
+- cmr_flow_fontan (Float): Fontan flow rate
+- cmr_flow_ivc (Float): Inferior vena cava (IVC) flow rate
+- cmr_flow_lpa (Float): Left pulmonary artery (LPA) flow rate
+- cmr_flow_lpv (Float): Left pulmonary vein (LPV) flow rate
+- cmr_flow_lsvc (Float): Left superior vena cava (LSVC) flow rate
+- cmr_flow_native_ao (Float): Native aorta (AO) flow rate
+- cmr_flow_neo_ao (Float): Neo-aorta (AO) flow rate
+- cmr_flow_qpqs (Float): QpQs
+- cmr_flow_qpqs_method (String): QpQs method
+- cmr_flow_qpqs_method_notes (String): QpQs method notes
+- cmr_flow_rf_ao (Float): Aortic or native aortic regurgitation fraction
+- cmr_flow_rf_mv (Float): Mitral or common atrioventricular regurgitation fraction
+- cmr_flow_rf_pa (Float): Pulmonary or neo-aortic regurgitation fraction 
+- cmr_flow_rf_tv (Float): Tricuspid valve regurgitation fraction
+- cmr_flow_rpa (Float): Right pulmonary artery (RPA) flow rate
+- cmr_flow_rpv (Float): Right pulmonary vein (RPV) flow rate
+- cmr_flow_rsvc (Float): Right superior vena cava (RSVC) flow rate
+- cmr_regurg_avv (Float): Qual AVVR by CMR
+- cmr_regurg_slv (Float): Qual AR/semi-lunar regurg by CMR
+- cmr_vvc (Boolean): Visible veno-venous collaterals (VVC)
+- cmr_vvc_notes (String): Visible veno-venous collaterals (VVC) description
+- cmr_age_at_cmr (Integer): Age at CMR (years)
+- cmr_not_fontan (Boolean): Not Fontan at CMR
+- cmr_technique (String): Technique
+- cmr_anatomy_notes (String): Anatomy description
+- cmr_bmi (Float): Body mass index (BMI)
+- cmr_contrast (String): Contrast type
+- cmr_contrast_agent_dose_ferumoxytol (Float): Contrast agent dose: Ferumoxytol (Ferahem)
+- cmr_contrast_agent_dose_gadobenate (Float): Contrast agent dose: Gadobenate dimeglumine (MultiHance)
+- cmr_contrast_agent_dose_gadobutrol (Float): Contrast agent dose: Gadobutrol (Gadavist, Gadovis)
+- cmr_contrast_agent_dose_gadodiamide (Float): Contrast agent dose: Gadodiamide (Omniscan)
+- cmr_contrast_agent_dose_gadofosveset (Float): Contrast agent dose: Gadofosveset trisodium (Ablavar, Vasovist)
+- cmr_contrast_agent_dose_gadopentetate (Float): Contrast agent dose: Gadopentetate dimeglumine (Magnevist)
+- cmr_contrast_agent_dose_gadoteric (Float): Contrast agent dose: Gadoteric acid, Gadoterate meglumine (Dotarem, Artirem)
+- cmr_contrast_agent_dose_gadoteridol (Float): Contrast agent dose: Gadoteridol (ProHance)
+- cmr_contrast_agent_dose_gadoversetamide (Float): Contrast agent dose: Gadoversetamide (OptiMARK)
+- cmr_contrast_agent_dose_gadoxetic (Float): Contrast agent dose Gadoxetic acid, Gadoxetate (Eovist)
+- cmr_contrast_agent_dose_other (Float): Contrast agent dose: other
+- cmr_contrast_agent_dose_unknown (Float): Contrast agent dose: Gadolinium unknown
+- cmr_contrast_agent_type___ferumoxytol_feraheme (Boolean): Contrast agent type: Ferumoxytol (Ferahem)
+- cmr_contrast_agent_type___gadobenate_dimeglumine_multihance (Boolean): Contrast agent type: Gadobenate dimeglumine (MultiHance)
+- cmr_contrast_agent_type___gadobutrol_gadavist_gadovist (Boolean): Contrast agent type: Gadobutrol (Gadavist, Gadovis)
+- cmr_contrast_agent_type___gadodiamide_omniscan (Boolean): Contrast agent type: Gadodiamide (Omniscan)
+- cmr_contrast_agent_type___gadofosveset_trisodium_ablavar_vasovist (Boolean): Contrast agent type: Gadofosveset trisodium (Ablavar, Vasovist)
+- cmr_contrast_agent_type___gadolinium_unknown (Boolean): Contrast agent type: Gadolinium unknown
+- cmr_contrast_agent_type___gadopentetate_dimeglumine_magnevist (Boolean): Contrast agent type: Gadopentetate dimeglumine (Magnevist)
+- cmr_contrast_agent_type___gadoteric_acid_gadoterate_meglumine_dotarem_artirem (Boolean): Contrast agent type: Gadoteric acid, Gadoterate meglumine (Dotarem, Artirem)
+- cmr_contrast_agent_type___gadoteridol_prohance (Boolean): Contrast agent type: Gadoteridol (ProHance)
+- cmr_contrast_agent_type___gadoversetamide_optimark (Boolean): Contrast agent type: Gadoversetamide (OptiMARK)
+- cmr_contrast_agent_type___gadoxetic_acid_gadoxetate_eovist (Boolean): Contrast agent type: Gadoxetic acid, Gadoxetate (Eovist)
+- cmr_contrast_agent_type___other (Boolean): Contrast agent type: other
+- cmr_contrast_agent_type_notes (String): Contrast agent type: other description
+- cmr_fontan_type (String): Fontan type at CMR
+- cmr_fontan_type_notes (String): Fontan type at CMR: other description
+- cmr_fontan_fen (String): Fenestration status at CMR
+- cmr_outside (Boolean): Outside CMR
+- cmr_pt_bp_le_dias (Float): Lower extremity diastolic blood pressure
+- cmr_pt_bp_le_mean (Float): Lower extremity mean blood pressure
+- cmr_pt_bp_le_sys (Float): Lower extremity systolic blood pressure
+- cmr_pt_bp_ue_dias (Float): Upper extremity diastolic blood pressure
+- cmr_pt_bp_ue_mean (Float): Upper extremity mean blood pressure
+- cmr_pt_bp_ue_sys (Float): Upper extremity systolic blood pressure
+- cmr_pt_bsa (Float): Body surface area (BSA) calculated
+- cmr_pt_bsa_rpt (Float): Body surface area (BSA) on report
+- cmr_pt_hct (Float): Hematocrit (Hct) 
+- cmr_pt_height (Float): Height
+- cmr_pt_hr (Integer): Heart rate 
+- cmr_pt_weight (Float): Weight
+- cmr_report_artifact_notes (String): Artifact description
+- cmr_report_notes (String): CMR Report description
+- cmr_sedation (Boolean): Sedation
+- cmr_tesla (Float): Tesla
+- cmr_tesla_notes (String): Tesla description
+- cmr_vendor (String): Scanner
+- cmr_vendor_notes (String): Scanner description
+- cmr_ambra (Boolean): In Ambra?
+- cmr_ambra_tech_issue (String): Ambra technical issue description
+- cmr_contour (Boolean): Single ventricle contour?
+- cmr_fxn_notes (String): CMR function description notes
+- cmr_lge (Boolean): Late gadolinium enhancement (LGE)
+- cmr_lge_location___larger_systemic_ventricle_includes_ventricular_septum (String): Location of late gadolinium enhancement (LGE): Larger systemic ventricle (includes_ventricular_septum)
+- cmr_lge_location___other (String): Location of late gadolinium enhancement (LGE): other
+- cmr_lge_location___papillary_muscles (String): Location of late gadolinium enhancement (LGE): Papillary muscle(s)
+- cmr_lge_location___prior_sano_conduit_insertion_site (String): Location of late gadolinium enhancement (LGE): Prior Sano conduit insertion site
+- cmr_lge_location___septal_insertion_site (String): Location of late gadolinium enhancement (LGE): Septal insertion site
+- cmr_lge_location___small_systemic_ventricle (String): Location of late gadolinium enhancement (LGE): Small systemic ventricle
+- cmr_lge_location___subendocardial_fibroelastosis (String): Location of late gadolinium enhancement (LGE): (Sub)endocardial fibroelastosis
+- cmr_lge_location___unable_to_determine (String): Location of late gadolinium enhancement (LGE): Unable to determine
+- cmr_lge_notes (String): Description of late gadolinium enhancement (LGE)
+- cmr_lge_perform (Boolean): LGE performed?
+- cmr_lv_edv (Float): Left ventricle end-diastolic volume
+- cmr_lv_ef (Float): Left ventricle ejection fraction (EF)
+- cmr_lv_esv (Float): Left ventricle end-systolic volume
+- cmr_lv_mass (Float): Left ventricle mass
+- cmr_lv_mvr (Float): Mass to volume ratio
+- cmr_lv_sv (Float): Left ventricle stroke volume
+- cmr_sv_mass_height27 (Float): Effective combined single ventricle mass / (Ht)^2.7
+- cmr_rv_edv (Float): Right ventricle end-diastolic volume
+- cmr_rv_ef (Float): Right ventricle ejection fraction (EF)
+- cmr_rv_esv (Float): Right ventricle end-systolic volume
+- cmr_rv_mass (Float): Right ventricle mass
+- cmr_rv_mvr (Float): RV MVR
+- cmr_rv_sv (Float): RV SV
+- cmr_strain_gcs_2v (Float): Global Circumfrential Peak Strain
+- cmr_strain_gcs_phase (Integer): # phases GCS
+- cmr_strain_gcsr_2v (Float): Circ Strain Rate
+- cmr_strain_gls_2v (Float): Global Longitudinal Peak Strain
+- cmr_strain_gls_phase (Integer): # phases GLS
+- cmr_strain_glsr_2v (Float): Long Peak Strain Rate
+- cmr_strain_grs_2v (Float): Global Radial Strain
+- cmr_strain_grsr_2v (Float): Radial Strain Rate
+- cmr_sv_edv (Float): Effective combined single ventricle end-diastolic volume 
+- cmr_sv_edv_bsa1 (Float): Effective combined single ventricle end-diastolic volume / BSA
+- cmr_sv_edv_bsa13 (Float): Effective combined single ventricle end-diastolic volume / (BSA)^1.3
+- cmr_sv_ef (Float): Effective combined single ventricle ejection fraction
+- cmr_sv_esv (Float): Effective combined single ventricle end-systolic volume 
+- cmr_sv_esv_bsa1 (Float): Effective combined single ventricle end-systolic volume / BSA
+- cmr_sv_esv_bsa13 (Float): Effective combined single ventricle end-systolic volume / (BSA)^1.3
+- cmr_sv_mass (Float): Effective combined single ventricle  mass
+- cmr_sv_mass_bsa1 (Float): Effective combined single ventricle  mass / BSA
+- cmr_sv_mass_bsa13 (Float): Effective combined single ventricle  mass / (BSA)^1.3
+- cmr_sv_mvr (Float): Effective combined single ventricle mass to volume ratio
+- cmr_sv_mvr_bsa1 (Float): Effective combined single ventricle mass to volume ratio / BSA
+- cmr_sv_mvr_bsa13 (Float): Effective combined single ventricle mass to volume ratio / (BSA)^1.3
+- cmr_sv_sv (Float): Effective combined single ventricle stroke volume 
+- cmr_sv_sv_bsa1 (Float): Effective combined single ventricle stroke volume / BSA
+- cmr_sv_sv_bsa13 (Float): Effective combined single ventricle stroke volume / (BSA)^1.3
+- cmr_vent_systemic_circ (String): Which ventricles contribute to systemic circultation
+- cmr_mass_height27 (Float): SV Mass / Ht^2.7
+- cmr_ecv_mean (Float): ECV mean
+- cmr_ecv_sd (Float): ECV SD
+- cmr_o2_sat (Float): O2 saturation
+- cmr_t1_mean (Float): T1 Mean
+- cmr_t1_sd (Float): T1 StDev
+- cmr_flow_diff_rpa (Float): RPA flow %
+- cmr_flow_diff_lpa (Float): LPA flow %
+- cmr_dim_aao1 (Float): Asc AO
+- cmr_dim_aao2 (Float): Asc AO
+- cmr_dim_lpa1 (Float): LPA
+- cmr_dim_lpa2 (Float): LPA
+- cmr_dim_rpa1 (Float): RPA
+- cmr_dim_rpa2 (Float): RPA
+- cmr_dim_ao_is1 (Float): Aortic isthmus
+- cmr_dim_ao_is2 (Float): Aortic isthmus
+- cmr_dim_ao_arch_distal_trans1 (Float): Distal transverse aortic arch
+- cmr_dim_ao_arch_distal_trans2 (Float): Distal transverse aortic arch
+- cmr_dim_ao_desc1 (Float): Descending aorta
+- cmr_dim_ao_desc2 (Float): Descending aorta
+- cmr_dim_neoao_root1 (Float): Neo-aortic root
+- cmr_dim_neoao_root2 (Float): Neo-aortic root
+- cmr_dim_ao_valve_annulus1 (Float): Aortic valve annulus
+- cmr_dim_ao_valve_annulus2 (Float): Aortic valve annulus
+- cmr_dim_neoao_valve_annulus1 (Float): Neo-aortic valve annulus
+- cmr_dim_neoao_valve_annulus2 (Float): Neo-aortic valve annulus
+- cmr_dim_ao_arch_prox_trans1 (Float): Proximal transverse aortic arch
+- cmr_dim_ao_arch_prox_trans2 (Float): Proximal transverse aortic arch
+- cmr_dim_tri_valve_annulus_lat1 (Float): Tricuspid valve annulus lateral
+- cmr_dim_mitral_valve_annulus_lat1 (Float): Mitral valve annulus lateral
+- cmr_dim_tri_valve_annulus_antpos1 (Float): Tricuspid valve annulus anteroposterior
+- cmr_dim_mitral_valve_annulus_antpos1 (Float): Mitral valve annulus anteroposterior
+- cmr_dim_commonav_valve_annulus_lat1 (Float): Common atrioventricular valve annulus lateral
+- cmr_dim_ao_root_sa1 (Float): Aortic root sinus to commissure (short-axis)
+- cmr_sequence_notes (String): Sequence notes
+- cmr_dim_ao_root_antpos1 (Float): Anteroposterior diameter
+- cmr_dim_ao_root_trans1 (Float): Transverse diameter
+- cmr_exam_reason (String): Reason for exam

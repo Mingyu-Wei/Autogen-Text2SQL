@@ -1,0 +1,100 @@
+Table: pt_hx
+Columns:
+- mrn (string): Medical record number (MRN)
+- dx_cardiac (string): Cardiac Diagnosis
+- dx_cardiac_notes (string): Cardiac diagnosis description
+- dx_date_recorded (date): Date of last documentation available for this assessment
+- dx_genetic___cornelia_de_lange_syndrome (boolean): Genetic diagnosis: Cornelia de Lange syndrome
+- dx_genetic___digeorge (boolean): Genetic diagnosis: Digeorge
+- dx_genetic___ellis_van_creveld_syndrome (boolean): Genetic diagnosis: Ellis-van Creveld syndrome
+- dx_genetic___goldenhar_syndrome (boolean): Genetic diagnosis: Goldenhar syndrome
+- dx_genetic___holt_oram_syndrome (boolean): Genetic diagnosis: Holt-Oram syndrome
+- dx_genetic___jacobsen_syndrome (boolean): Genetic diagnosis: Jacobsen syndrome
+- dx_genetic___kabuki_syndrome (boolean): Genetic diagnosis: Kabuki syndrome
+- dx_genetic___kartagener_syndrome (boolean): Genetic diagnosis: Kartagener syndrome
+- dx_genetic___none (boolean): Genetic diagnosis: none
+- dx_genetic___noonan_syndrome (boolean): Genetic diagnosis: Noonan syndrome
+- dx_genetic___other (boolean): Genetic diagnosis: other
+- dx_genetic___rubinstein_taybi_syndrome (boolean): Genetic diagnosis: Rubinstein-Taybi syndrome
+- dx_genetic___smith_lemli_opitz_syndrome (boolean): Genetic diagnosis: Smith-Lemli-Opitz syndrome
+- dx_genetic___suspected_genetic_diagnosis_or_syndrome (boolean): Genetic diagnosis: Suspected genetic diagnosis or syndrome
+- dx_genetic___trisomy_21 (boolean): Genetic diagnosis: Trisomy 21
+- dx_genetic___turner_syndrome (boolean): Genetic diagnosis: Turner syndrome
+- dx_genetic___vacterl_syndrome_vacter_vater_vaterr_vacterl_h_syndrome (boolean): Genetic diagnosis: VACTERL syndrome (vacter/vater/vaterr/vacterl-h syndrome)
+- dx_genetic___wollf_hirschhorn_syndrome (boolean): Genetic diagnosis: Wollf Hirschhorn syndrome
+- dx_genetic_notes (string): Genetic diagnosis description
+- dx_htx (boolean): Suspected heterotaxy
+- dx_ivc (boolean): Interrupted inferior vena cava (IVC)
+- dx_vent_morph (string): Functional Ventricle Type OR Dominant Ventricular morphology
+- proc_apc (boolean): Aortopulmonary collateral (APC) intervention
+- proc_apc_date (date): Aortopulmonary collateral (APC) intervention date
+- proc_arch (boolean): Non-neonatal arch procedure
+- proc_arch_date (date): Ascending aorta or arch intervention date
+- proc_arch_type (string): Ascending aorta or arch intervention tpe
+- proc_arch_type_notes (string): Ascending aorta or arch intervention description
+- proc_avv (boolean): Atrioventricular valve procedure
+- proc_avv_date (date): Atrioventricular valve procedure date
+- proc_avv_type (string): Atrioventricular valve procedure type
+- proc_avv_type_notes (string): Atrioventricular valve procedure description
+- proc_branchpa (boolean): Branch pulmonary artery intervention
+- proc_branchpa_date (date): Branch pulmonary artery intervention date
+- proc_branchpa_type (string): Branch pulmonary artery intervention type
+- proc_branchpa_type_notes (string): Branch pulmonary artery intervention description
+- proc_fontan_path (boolean): Fontan pathway intervention
+- proc_fontan_path_date (date): Fontan pathway intervention date
+- proc_fontan_path_type (string): Fontan pathway intervention type
+- proc_fontan_path_notes (string): Fontan pathway intervention description
+- proc_pab (boolean): Pulmonary artery band 
+- proc_pab_date (date): Pulmonary artery band date
+- proc_pulm_vein_type (string): Pulmonary vein intervention type
+- proc_pulm_vein_type_notes (string): Pulmonary vein intervention description
+- proc_pulm_vein (Boolean): Pulmonary vein intervention
+- proc_pulm_vein_date (Date): Pulmonary vein intervention date
+- proc_shunt (Boolean): Prior systemic to pulmonary artery shunt
+- proc_shunt_date (Date): Prior systemic to pulmonary artery shunt date
+- proc_shunt_type (String): Prior systemic to pulmonary artery shunt type
+- proc_shunt_type_notes (String): Prior systemic to pulmonary artery shunt description
+- proc_slv (Boolean): Semi-lunar valve procedure
+- proc_slv_date (Date): Semi-lunar valve procedure date
+- proc_slv_type (String): Semi-lunar valve procedure type
+- proc_slv_type_notes (String): Semi-lunar valve procedure description
+- proc_stansel (Boolean): Stansel/Damus/DKS procedure
+- proc_stansel_date (Date): Stansel/Damus/DKS procedure date
+- proc_svc (Boolean): Superior vena cava (SVC) intervention
+- proc_svc_date (Date): Superior vena cava (SVC) intervention date
+- proc_svc_type (String): Superior vena cava (SVC) intervention type
+- proc_svc_type_notes (String): Superior vena cava (SVC) intervention description
+- proc_vvc (Boolean): Veno-venous collaterals (VVC) intervention
+- proc_vvc_date (Date): Veno-venous collaterals (VVC) intervention date
+- surg_cardiac_total (Integer): Total cardiac surgeries
+- surg_fontan_date (Date): Stage 3/ Fontan Date
+- surg_fontan_fen (Boolean): Fenestration at initial fontan (check box under Fontan Surgery)
+- surg_fontan_rev (Boolean): Fontan Revision
+- surg_fontan_rev_date (Date): Fontan Revision date
+- surg_fontan_rev_fen (Boolean): Fenestration at fontan revision (check box under Fontan Revision)
+- surg_fontan_rev_notes (String): Fontan Revision descriptions
+- surg_fontan_rev_type (String): Fontan Revision type
+- surg_fontan_type (String): Fontan Type
+- surg_fontan_type_notes (String): Fontan description
+- surg_neo (Boolean): Stage 1/ Neonatal (<30 days old) Surgery
+- surg_neo_date (Date): Stage 1/ Neonatal (<30 days old) Surgery Date
+- surg_neo_shunt (Boolean): Type of pulmonary blood flow shunt: Prior systemic to PA shunt?
+- surg_neo_shunt_notes (String): Type of pulmonary blood flow shunt: Prior systemic to PA shunt? Description
+- surg_neo_type (String): Stage 1/ Neonatal Surgery type 
+- surg_neo_type_notes (String): Stage 1/ Neonatal Surgery description 
+- surg_prefontan_oth_date (Date): Pre Fontan Surgery Date
+- surg_prefontan_oth_notes (String): Pre Fontan Surgery description
+- surg_prefontan_other (Boolean): Pre Fontan Surgery 
+- surg_proc_hx_notes (String): Other relevant surgical or clinical history description
+- surg_stage2 (Boolean): Stage 2/ BDG
+- surg_stage2_date (Date): Stage 2/ BDG Date
+- surg_stage2_type (String): Stage 2/ BDG type
+- surg_stage2_type_notes (String): Stage 2/ BDG description
+- surg_count_pump_on (Integer): Surgery on cardiopulmonary bypass (+CPB)
+- surg_count_pump_off (Integer): Surgery off cardiopulmonary bypass (no CPB)
+- surg_count_post_fontan (Integer): Surgery count post Fontan
+- cath_count_at_bch (Integer): Number of caths (at BCH)
+- cath_count_post_fontan (Integer): Interventional caths post Fontan
+- dx_cardiac_anatomy_notes (String): Cardiac diagnosis and anatomy notes
+- surg_biv_convert_date (Date): BiVentricular Surgery Date
+- surg_biv_notes (String): BiVentricular Surgery Description

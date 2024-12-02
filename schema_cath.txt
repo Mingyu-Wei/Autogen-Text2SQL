@@ -1,0 +1,28 @@
+Table: cath
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- cath_date (Date): Date of catheterization
+- cath_press_fontan (Float): Representative Mean Fontan pressure
+- cath_press_sysvent (Float): Systemic ventricle end-diastolic pressure
+- cath_press_lpa_dist (Float): Mean distal LPA pulmonary artery pressure
+- cath_press_lpa_atrial (Float): Mean atrial pressure or LPA pulmonary capillary wedge
+- cath_press_rpa_dist (Float): Mean atrial pressure or RPA pulmonary capillary wedge
+- cath_press_rpa_atrial (Float): Mean atrial pressure or RPA pulmonary capillary wedge
+- cath_pvr (Float): Pulmonary vascular resistance (PVR)
+- cath_ci (Float): Systemic Cardiac Index (Qs)
+- cath_qpqs (Float): Qp/Qs
+- cath_sat (Float): Directly measured systemic arterial saturation on room air
+- cath_interven_notes (String): Intervention notes
+- cath_report_notes (String): Other relevant report comments or concerns
+- cath_interven___no_interventions (Boolean): Cath intervention: No interventions
+- cath_interven___fontan_fenestration_closure (Boolean): Cath intervention: Fontan fenestration closure
+- cath_interven___fontan_fenestration_creation (Boolean): Cath intervention: Fontan fenestration creation
+- cath_interven___apc_coil_occ_or_gel (Boolean): Cath intervention: Aortopulmonary collateral coil occlusion or gelfoam
+- cath_interven___vvc_coil_occ_or_gel (Boolean): Cath intervention: Veno-venous collateral coil occlusion or gelfoam
+- cath_interven___bpa_balloon_dilation_or_stent (Boolean): Cath intervention: BPA balloon dilation or stenting
+- cath_interven___pulmonary_vein_balloon_dilation_or_stenting (Boolean): Cath intervention: Pulmonary vein balloon dilation or stenting
+- cath_interven___fontan_svc_ivc_balloon_dilation_or_stent (Boolean): Cath intervention: Fontan/Superior vena cava/Inferior vena cava balloon dilation or stenting
+- cath_interven___asc_ao_or_stansel_balloon_dilation_or_stent (Boolean): Cath intervention: Ascending aorta or Stansel balloon dilation or stenting
+- cath_interven___trans_arch_or_ao_isth_balloon_dilation_or_stent (Boolean): Cath intervention: Transverse arch or aortic isthmus balloon dilation or stenting
+- cath_interven___other_intervention (Boolean): Cath intervention: Other intervention

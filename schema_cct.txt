@@ -1,0 +1,141 @@
+Table: cct
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (String): Event ID
+- ct_date (Date): CCT date
+- ct_age_at_ct (Float): Age at CT (years)
+- ct_anatomy_notes (String): Anatomy description
+- ct_apc (Boolean): Visible aortopulmonary collaterals (APC)
+- ct_apc_notes (String): Visible aortopulmonary collateral (APC) description
+- ct_bmi (Float): Body mass index (BMI)
+- ct_contour (Boolean): Single ventricle contour?
+- ct_contrast_total (Float): Contrast total
+- ct_dim_aao1 (Float): Asc AO
+- ct_dim_aao2 (Float): Asc AO
+- ct_dim_ao_arch_distal_trans1 (Float): Distal transverse aortic arch
+- ct_dim_ao_arch_distal_trans2 (Float): Distal transverse aortic arch
+- ct_dim_ao_arch_prox_trans1 (Float): Proximal transverse aortic arch
+- ct_dim_ao_arch_prox_trans2 (Float): Proximal transverse aortic arch
+- ct_dim_ao_desc1 (Float): Descending aorta
+- ct_dim_ao_desc2 (Float): Descending aorta
+- ct_dim_ao_is1 (Float): Aortic isthmus
+- ct_dim_ao_is2 (Float): Aortic isthmus
+- ct_dim_ao_root_antpos1 (Float): Anteroposterior diameter
+- ct_dim_ao_root_sa1 (Float): Aortic root sinus to commissure (short-axis)
+- ct_dim_ao_root_trans1 (Float): Transverse diameter
+- ct_dim_ao_valve_annulus1 (Float): Aortic valve annulus
+- ct_dim_ao_valve_annulus2 (Float): Aortic valve annulus
+- ct_dim_commonav_valve_annulus_lat1 (Float): Common atrioventricular valve annulus lateral
+- ct_dim_lpa1 (Float): LPA
+- ct_dim_lpa2 (Float): LPA
+- ct_dim_mitral_valve_annulus_antpos1 (Float): Mitral valve annulus anteroposterior
+- ct_dim_mitral_valve_annulus_lat1 (Float): Mitral valve annulus lateral
+- ct_dim_neoao_root1 (Float): Neo-aortic root
+- ct_dim_neoao_root2 (Float): Neo-aortic root
+- ct_dim_neoao_valve_annulus1 (Float): Neo-aortic valve annulus
+- ct_dim_neoao_valve_annulus2 (Float): Neo-aortic valve annulus
+- ct_dim_rpa1 (Float): RPA
+- ct_dim_rpa2 (Float): RPA
+- ct_dim_tri_valve_annulus_antpos1 (Float): Tricuspid valve annulus anteroposterior
+- ct_dim_tri_valve_annulus_lat1 (Float): Tricuspid valve annulus lateral
+- ct_ecv_mean (Float): ECV Mean
+- ct_ecv_sd (Float): ECV StDev
+- ct_exam_reason (String): Reason for exam
+- ct_flow_asc_ao (Float): AAO (distal)
+- ct_flow_avv (Float): Common atrioventricular valve (AVV) flow rate
+- ct_flow_avv_mitral (Float): Mitral valve (MV) flow rate
+- ct_flow_avv_tri (Float): Tricuspid valve (TV) flow rate
+- ct_flow_desc_ao (Float): Descending aorta (DAO) flow rate
+- ct_flow_diff_lpa (Float): LPA flow %
+- ct_flow_diff_rpa (Float): RPA flow %
+- ct_flow_fontan (Float): Fontan flow rate
+- ct_flow_ivc (Float): Inferior vena cava (IVC) flow rate
+- ct_flow_lpa (Float): Left pulmonary artery (LPA) flow rate
+- ct_flow_lpv (Float): Left pulmonary vein (LPV) flow rate
+- ct_flow_lsvc (Float): Left superior vena cava (LSVC) flow rate
+- ct_flow_native_ao (Float): Native aorta (AO) flow rate
+- ct_flow_neo_ao (Float): Neo-aorta (AO) flow rate
+- ct_flow_qpqs (Float): QpQs
+- ct_flow_qpqs_method (String): QpQs method
+- ct_flow_qpqs_method_notes (String): QpQs method notes
+- ct_flow_rf_ao (Float): Aortic or native aortic regurgitation fraction
+- ct_flow_rf_mv (Float): Mitral or common atrioventricular regurgitation fraction
+- ct_flow_rf_pa (Float): Pulmonary or neo-aortic regurgitation fraction 
+- ct_flow_rf_tv (Float): Tricuspid valve regurgitation fraction
+- ct_flow_rpa (Float): Right pulmonary artery (RPA) flow rate
+- ct_flow_rpv (Float): Right pulmonary vein (RPV) flow rate
+- ct_flow_rsvc (Float): Right superior vena cava (RSVC) flow rate
+- ct_fontan_fen (String): Fenestration status at CMR
+- ct_fontan_type (String): Fontan type at CMR
+- ct_fontan_type_notes (String): Fontan type at CMR: other description
+- ct_fxn_notes (String): CCT function description notes
+- ct_lv_edv (Float): Left ventricle end-diastolic volume
+- ct_lv_ef (Float): Left ventricle ejection fraction (EF)
+- ct_lv_esv (Float): Left ventricle end-systolic volume
+- ct_lv_mass (Float): Left ventricle mass
+- ct_lv_mvr (Float): Mass to volume ratio
+- ct_lv_sv (Float): Left ventricle stroke volume
+- ct_mass_height27 (Float): SV Mass / Ht^2.7
+- ct_o2_sat (Float): O2 saturation
+- ct_pt_bp_le_dias (Integer): Lower extremity diastolic blood pressure
+- ct_pt_bp_le_mean (Integer): Lower extremity mean blood pressure
+- ct_pt_bp_le_sys (Integer): Lower extremity systolic blood pressure
+- ct_pt_bp_ue_dias (Integer): Upper extremity diastolic blood pressure
+- ct_pt_bp_ue_mean (Integer): Upper extremity mean blood pressure
+- ct_pt_bp_ue_sys (Integer): Upper extremity systolic blood pressure
+- ct_pt_bsa (Float): Body surface area (BSA) calculated
+- ct_pt_bsa_rpt (Float): Body surface area (BSA) on report
+- ct_pt_hct (Float): Hematocrit (Hct) 
+- ct_pt_height (Float): Height
+- ct_pt_hr (Integer): Heart rate 
+- ct_pt_weight (Float): Weight
+- ct_regurg_avv (String): Qual AVVR by CMR
+- ct_regurg_slv (String): Qual AR/semi-lunar regurg by CMR
+- ct_report (String): Report description
+- ct_report_artifact_notes (String): Artifact description
+- ct_report_notes (String): CMR Report description
+- ct_rv_edv (Float): Right ventricle end-diastolic volume
+- ct_rv_ef (Float): Right ventricle ejection fraction (EF)
+- ct_rv_esv (Float): Right ventricle end-systolic volume
+- ct_rv_mass (Float): Right ventricle mass
+- ct_rv_mvr (Float): RV MVR
+- ct_rv_sv (Float): RV SV
+- ct_sedation (String): Sedation
+- ct_sequence (String): Sequence
+- ct_sequence_notes (String): Sequence notes
+- ct_strain_gcs_2v (Float): Global Circumfrential Peak Strain
+- ct_strain_gcs_phase (Integer): # phases GCS
+- ct_strain_gcsr_2v (Float): Circ Strain Rate
+- ct_strain_gls_2v (Float): Global Longitudinal Peak Strain
+- ct_strain_gls_phase (Integer): # phases GLS
+- ct_strain_glsr_2v (Float): Long Peak Strain Rate
+- ct_strain_grs_2v (Float): Global Radial Strain
+- ct_strain_grsr_2v (Float): Radial Strain Rate
+- ct_sv_edv (Float): Effective combined single ventricle end-diastolic volume 
+- ct_sv_edv_bsa1 (Float): Effective combined single ventricle end-diastolic volume / BSA
+- ct_sv_edv_bsa13 (Float): Effective combined single ventricle end-diastolic volume / (BSA)^1.3
+- ct_sv_ef (Float): Effective combined single ventricle ejection fraction
+- ct_sv_esv (Float): Effective combined single ventricle end-systolic volume 
+- ct_sv_esv_bsa1 (Float): Effective combined single ventricle end-systolic volume / BSA
+- ct_sv_esv_bsa13 (Float): Effective combined single ventricle end-systolic volume / (BSA)^1.3
+- ct_sv_mass (Float): Effective combined single ventricle  mass
+- ct_sv_mass_bsa1 (Float): Effective combined single ventricle  mass / BSA
+- ct_sv_mass_bsa13 (Float): Effective combined single ventricle  mass / (BSA)^1.3
+- ct_sv_mass_height27 (Float): Effective combined single ventricle mass / (Ht)^2.7
+- ct_sv_mvr (Float): Effective combined single ventricle mass to volume ratio
+- ct_sv_mvr_bsa1 (Float): Effective combined single ventricle mass to volume ratio / BSA
+- ct_sv_mvr_bsa13 (Float): Effective combined single ventricle mass to volume ratio / (BSA)^1.3
+- ct_sv_sv (Float): Effective combined single ventricle stroke volume 
+- ct_sv_sv_bsa1 (Float): Effective combined single ventricle stroke volume / BSA
+- ct_sv_sv_bsa13 (Float): Effective combined single ventricle stroke volume / (BSA)^1.3
+- ct_t1_mean (Float): T1 Mean
+- ct_t1_sd (Float): T1 StDev
+- ct_technique (String): Technique
+- ct_tesla (Float): Tesla
+- ct_tesla_notes (String): Tesla description
+- ct_tube_voltage (Integer): Tube Voltage (kV)
+- ct_vendor (String): Scanner
+- ct_vendor_notes (String): Scanner description
+- ct_vent_systemic_circ (String): Which ventricles contribute to systemic circultation
+- ct_vvc (String): Visible veno-venous collaterals (VVC)
+- ct_vvc_notes (String): Visible veno-venous collaterals (VVC) description

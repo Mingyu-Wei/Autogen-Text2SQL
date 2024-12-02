@@ -1,0 +1,27 @@
+Table: echo
+Columns:
+- mrn (String): Medical record number (MRN)
+- event_id (Integer): Event ID
+- echo_date (Date): Date of echocardiogram
+- echo_avvr (Float): Total atrioventricular valve regurgitation
+- echo_avvs (Boolean): Atrioventriuclar valve stenosis
+- echo_avvs_mg (Float): If 'yes' to atrioventricular valve stenosis, provide mean gradient
+- echo_avvs_hr (Integer): If 'yes' to atrioventricular valve stenosis, provide heart rate
+- echo_slvr (Float): Total semi-lunar valve regurgitation
+- echo_slvs (Boolean): Semi-lunar valve stenosis
+- echo_slvs_mig (Float): If 'yes' to semi-lunar valve stenosis, provide highest maximum instantaneous gradient
+- echo_slvs_mg (Float): If 'yes' to semi-lunar valve stenosis, provide highest mean gradient
+- echo_fen_patent (Boolean): Patent fenestration or baffle leak
+- echo_fen_patent_mg (Float): If 'yes' to patent fenestration or baffle leak, provide mean gradient
+- echo_obst_arch (Boolean): Arch obstruction
+- echo_obst_arch_mig (Float): If 'yes' to arch obstruction, provide Dooppler maximum instantaneous gradient
+- echo_obst_pv (Boolean): Pulmonary venous obstruction
+- echo_obst_pv_notes (String): If 'yes' to pulmonary venous obstruction, provide details
+- echo_obst_fontan (Boolean): Fontan pathway obstruction
+- echo_obst_fontan_notes (String): If 'yes' to Fontan pathway obstruction, provide details
+- echo_obst_branchpa (Boolean): Branch pulmonary artery obstruction
+- echo_obst_branchpa_notes (String): If 'yes' to branch pulmonary artery obstruction, provide details
+- echo_thrombus (Boolean): Visible intracardiac or vascular thrombus
+- echo_thrombus_notes (String): If 'yes' to intracardiac or vascular thrombus, describe
+- echo_report_notes (String): Other relevant report comments or concerns
+- echo_sys_func (String): Qualitative systolic function dominant ventricle
